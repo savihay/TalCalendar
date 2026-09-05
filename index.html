@@ -79,6 +79,25 @@
       gap: 8px;
     }
 
+    /* בטלפון: הכותרת בשורה אחת והכפתורים בשורה שמתחתיה,
+       אחרת שלושת הכפתורים חורגים מרוחב המסך */
+    @media screen and (max-width: 560px) {
+      .top-bar {
+        flex-wrap: wrap;
+        row-gap: 8px;
+        padding: 8px 12px;
+      }
+      .top-bar .title { font-size: 0.95rem; }
+      .top-bar .btn-group { width: 100%; }
+      .top-bar .btn {
+        flex: 1;
+        justify-content: center;
+        padding: 8px 4px;
+        font-size: 0.78rem;
+        white-space: nowrap;
+      }
+    }
+
     .btn {
       padding: 7px 14px;
       border-radius: 8px;
@@ -494,7 +513,132 @@
       padding: 8px 0;
     }
 
+    /* ימי חופשה בתוך שבוע הלימודים */
+    .holiday-cell {
+      background: #ecfdf5;
+      color: #065f46;
+      font-weight: 800;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .holiday-cell .holiday-emoji { display: block; font-size: 1.3rem; }
+    .holiday-cell .holiday-sub { display: block; font-size: 0.72rem; font-weight: 600; opacity: 0.85; }
+
+    .end-row td.holiday-end { background: #ecfdf5; color: #065f46; }
+    .header-row th.holiday-head { background: #ecfdf5; color: #065f46; }
+
+    .day-date {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: #64748b;
+      margin-top: 1px;
+    }
+    .header-row th.holiday-head .day-date { color: #047857; }
+
+    .mobile-holiday {
+      padding: 30px 20px;
+      text-align: center;
+      background: #ecfdf5;
+    }
+    .mobile-holiday .mh-emoji { font-size: 2.4rem; line-height: 1; }
+    .mobile-holiday .mh-name { font-size: 1.15rem; font-weight: 800; color: #065f46; margin-top: 8px; }
+    .mobile-holiday .mh-sub { font-size: 0.85rem; font-weight: 600; color: #047857; margin-top: 4px; }
+    .mobile-holiday .mh-back { font-size: 0.8rem; font-weight: 600; color: #059669; margin-top: 8px; }
+
+    .day-tab .tab-vac {
+      position: absolute;
+      top: 1px;
+      left: 4px;
+      font-size: 0.6rem;
+      line-height: 1;
+    }
+
+    /* טאב לוח החופשות */
+    .vacations-view {
+      display: none;
+      width: 100%;
+      max-width: 1100px;
+      padding: 20px;
+    }
+    body.show-vacations .vacations-view { display: block; }
+    body.show-vacations .desktop-view,
+    body.show-vacations .mobile-view { display: none !important; }
+    body.show-vacations #viewToggleBtn { display: none; }
+
+    /* =========================================
+       VACATIONS (לוח חופשות)
+       ========================================= */
+    .vac-banner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid #c7d2fe;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+    .vac-banner.on-vacation { background: #ecfdf5; border-color: #34d399; color: #065f46; }
+    .vac-banner .vac-banner-icon { font-size: 1.2rem; flex-shrink: 0; }
+    .vac-banner b { font-weight: 800; }
+
+    .vac-section { margin-top: 0; }
+
+    .vac-section h2 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #1e293b;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .vac-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .vac-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      padding: 8px 10px;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .vac-card .vac-icon { font-size: 1.15rem; line-height: 1.2; flex-shrink: 0; }
+    .vac-name { font-size: 0.86rem; font-weight: 800; color: #0f172a; line-height: 1.3; }
+    .vac-range { font-size: 0.78rem; font-weight: 600; color: #334155; }
+    .vac-back { font-size: 0.72rem; font-weight: 600; color: #64748b; }
+
+    .vac-card.past { opacity: 0.45; }
+    .vac-card.next { border-color: #6366f1; border-width: 1.5px; background: #f5f3ff; }
+    .vac-card.now  { border-color: #10b981; border-width: 1.5px; background: #ecfdf5; }
+    .vac-card.none { border-style: dashed; }
+
+    .vac-flag {
+      display: inline-block;
+      margin-top: 3px;
+      padding: 1px 6px;
+      border-radius: 8px;
+      font-size: 0.66rem;
+      font-weight: 800;
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+    .vac-card.now .vac-flag { background: #d1fae5; color: #065f46; }
+
     /* Media Queries */
+    @media screen and (max-width: 900px) {
+      .vac-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     @media screen and (max-width: 768px) {
       .desktop-view {
         display: none;
@@ -502,6 +646,8 @@
       .mobile-view {
         display: block;
       }
+      .vacations-view { padding: 12px 14px 40px 14px; }
+      .vac-grid { grid-template-columns: 1fr; }
     }
 
     @media screen and (min-width: 769px) {
@@ -588,6 +734,30 @@
       .compact-act .act-note { font-size: 0.68rem; }
       .time-pill { font-size: 0.72rem; padding: 1px 6px; }
 
+      /* לוח החופשות מודפס כעמוד שני – עמוד 1 נשאר מערכת השעות בלבד */
+      .vac-banner { display: none !important; }
+      .vacations-view {
+        display: block !important;
+        max-width: none !important;
+        padding: 0 !important;
+        page-break-before: always;
+      }
+      body.show-vacations .desktop-view { display: block !important; }
+      .vac-section { margin-top: 0; }
+      .vac-section h2 { font-size: 1.35rem; margin-bottom: 14px; }
+      .vac-grid { gap: 10px; }
+      .vac-card {
+        padding: 12px 14px;
+        border-color: #64748b !important;
+        page-break-inside: avoid;
+      }
+      .vac-card.past { opacity: 1; }
+      .vac-card .vac-icon { font-size: 1.3rem; }
+      .vac-name { font-size: 1rem; }
+      .vac-range { font-size: 0.9rem; }
+      .vac-back { font-size: 0.8rem; }
+      .vac-flag { font-size: 0.72rem; }
+
       .legend-bar {
         margin-top: 12px;
         font-size: 0.85rem;
@@ -611,6 +781,9 @@
       <button class="btn btn-outline" id="viewToggleBtn" onclick="toggleFullTableView()">
         📱 <span id="toggleText">טבלה מלאה</span>
       </button>
+      <button class="btn btn-outline" id="vacToggleBtn" onclick="toggleVacationsView()">
+        🌴 <span id="vacToggleText">לוח חופשות</span>
+      </button>
       <button class="btn btn-primary" onclick="window.print()">
         🖨️ הדפסה
       </button>
@@ -621,6 +794,9 @@
        MOBILE APP VIEW (TABS + DAY CARDS)
        ==================================================== -->
   <main class="mobile-view" id="mobileAppView">
+    <!-- באנר סטטוס חופשה (rendered by JS) -->
+    <div id="vacBannerMobile"></div>
+
     <!-- Day Tabs (rendered by JS) -->
     <nav class="day-selector" id="daySelector" aria-label="בחירת יום"></nav>
 
@@ -635,9 +811,12 @@
        ==================================================== -->
   <main class="desktop-view">
     <div class="page-container">
+      <!-- באנר סטטוס חופשה (rendered by JS, לא מודפס) -->
+      <div id="vacBannerDesktop"></div>
+
       <div class="schedule-header">
         <h1 class="schedule-title">מערכת שעות שבועית</h1>
-        <p class="schedule-subtitle">שנת הלימודים תשפ״ו • כיתה ד׳ <span id="printDateNote"></span></p>
+        <p class="schedule-subtitle">שנת הלימודים תשפ״ז • כיתה ד׳ <span id="printDateNote"></span></p>
       </div>
 
       <div class="table-wrapper">
@@ -651,6 +830,16 @@
 
       <!-- Uniform / activities legend strip -->
       <div class="legend-bar" id="legendBar"></div>
+    </div>
+  </main>
+
+  <!-- ====================================================
+       VACATIONS TAB (also printed as page 2)
+       ==================================================== -->
+  <main class="vacations-view" id="vacationsPage">
+    <div class="page-container">
+      <div id="vacBannerPage"></div>
+      <section class="vac-section" id="vacSectionPage"></section>
     </div>
   </main>
 
@@ -716,6 +905,24 @@
     }
   ];
 
+  /* לוח חופשות תשפ״ז – לפי לוח החופשות של בית הספר.
+     התאריכים מלאים (כולל שנה) כי החופשות חוצות את גבול השנה האזרחית.
+     הערה: בלוח המקורי חנוכה נכתב "6-12/12/27", אבל 6.12 חל ביום ראשון
+     ב-2026 (וכך גם החזרה ב-13.12) – כלומר דצמבר 2026. */
+  const VACATIONS = [
+    { name: "ראש השנה", icon: "🍎", start: "2026-09-11", end: "2026-09-13", back: "2026-09-14" },
+    { name: "יום הכיפורים וסוכות", icon: "📖", start: "2026-09-22", end: "2026-09-24",
+      note: "ימי חופשה בין יום הכיפורים לסוכות" },
+    { name: "סוכות", icon: "🌿", start: "2026-09-25", end: "2026-10-03", back: "2026-10-04" },
+    { name: "חנוכה", icon: "🕎", start: "2026-12-06", end: "2026-12-12", back: "2026-12-13" },
+    { name: "ט״ו בשבט", icon: "🌳", start: "2027-01-23", end: "2027-01-23", noVacation: true,
+      note: "אין חופש" },
+    { name: "פורים", icon: "🎭", start: "2027-03-23", end: "2027-03-24", back: "2027-03-25" },
+    { name: "פסח", icon: "🍷", start: "2027-04-13", end: "2027-04-28", back: "2027-04-29" },
+    { name: "יום העצמאות", icon: "🇮🇱", start: "2027-05-12", end: "2027-05-12", back: "2027-05-13" },
+    { name: "חג השבועות", icon: "📜", start: "2027-06-10", end: "2027-06-11", back: "2027-06-13" }
+  ];
+
   // אילו חוגים מקבלים שורה בפס התחתון (מלבד התלבושת)
   const LEGEND_TYPES = [
     { type: "basketball", icon: "🏀", label: "כדורסל" },
@@ -757,6 +964,40 @@
     return day.activities.filter(isVisible);
   }
 
+  /* ---------- שבוע הלימודים המוצג ----------
+     השבוע רץ ראשון–שישי, וההחלפה לשבוע הבא קורית בשבת:
+     מהשבת שלפני ועד השבת שאחרי מוצג אותו שבוע. */
+
+  function weekStartSunday(today) {
+    const d = startOfDay(today);
+    const dow = d.getDay();                    // 0=ראשון ... 6=שבת
+    const offset = dow === 6 ? 1 : -dow;       // בשבת כבר עוברים לשבוע הבא
+    return new Date(d.getFullYear(), d.getMonth(), d.getDate() + offset);
+  }
+
+  const WEEK_START = weekStartSunday(TODAY);
+
+  function dateOfDay(index) {
+    return new Date(WEEK_START.getFullYear(), WEEK_START.getMonth(), WEEK_START.getDate() + index);
+  }
+
+  function shortDate(date) {
+    return date.getDate() + '.' + (date.getMonth() + 1);
+  }
+
+  // החופשה שחלה על יום מסוים בשבוע המוצג (אם יש)
+  function dayVacation(index) {
+    const date = dateOfDay(index);
+    return VACATIONS.filter(v => !v.noVacation &&
+                                 date >= toDate(v.start) &&
+                                 date <= toDate(v.end))[0];
+  }
+
+  // פעילויות אחה״צ להצגה בשבוע הזה – ביום חופש אין חוגים
+  function weekActs(index) {
+    return dayVacation(index) ? [] : visibleActs(DAYS[index]);
+  }
+
   /* הערה מוצגת לפעילות. תאריכי from/until הם לוגיקה בלבד – הם קובעים אם
      הפעילות מוצגת, ולא מוצגים כטקסט. היוצא מן הכלל: startsOn, כשהפעילות
      מופיעה בלוח עוד לפני המפגש הראשון בפועל. */
@@ -773,11 +1014,12 @@
 
   function buildTableHead() {
     let html = '<th class="col-period">#</th>';
-    DAYS.forEach(day => {
-      const u = day.uniform ? UNIFORMS[day.uniform] : null;
-      html += '<th class="col-day">' + day.name +
-        (u ? '<span class="uniform-dot">' + u.icon + ' ' + u.label + '</span>' : '') +
-        '</th>';
+    DAYS.forEach((day, i) => {
+      const vac = dayVacation(i);
+      const u = (!vac && day.uniform) ? UNIFORMS[day.uniform] : null;   // ביום חופש אין תלבושת
+      const sub = shortDate(dateOfDay(i)) + (u ? ' • ' + u.icon + ' ' + u.label : '');
+      html += '<th class="col-day' + (vac ? ' holiday-head' : '') + '">' + day.name +
+        '<span class="day-date">' + sub + '</span></th>';
     });
     document.getElementById('tableHead').innerHTML = html;
   }
@@ -796,12 +1038,23 @@
 
   function buildTableBody() {
     const maxLessons = Math.max.apply(null, DAYS.map(d => d.lessons.length));
+    const vacs = DAYS.map((d, i) => dayVacation(i));
     let html = '';
 
-    // שיעורי בוקר
+    // שיעורי בוקר – יום חופש הוא תא אחד שמשתרע על כל השורות
     for (let i = 0; i < maxLessons; i++) {
       html += '<tr><td class="col-period">' + (i + 1) + '</td>';
-      DAYS.forEach(day => {
+      DAYS.forEach((day, d) => {
+        if (vacs[d]) {
+          if (i === 0) {
+            html += '<td class="holiday-cell" rowspan="' + maxLessons + '">' +
+                      '<span class="holiday-emoji">' + vacs[d].icon + '</span>' +
+                      'חופשת ' + vacs[d].name +
+                      '<span class="holiday-sub">אין לימודים</span>' +
+                    '</td>';
+          }
+          return;   // בשאר השורות התא כבר מכוסה ע"י ה-rowspan
+        }
         const lesson = day.lessons[i];
         html += lesson
           ? '<td class="lesson-cell">' + lesson + '</td>'
@@ -812,19 +1065,21 @@
 
     // שעת סיום
     html += '<tr class="end-row"><td class="period-hour">סיום</td>' +
-            DAYS.map(d => '<td>' + d.end + '</td>').join('') + '</tr>';
+            DAYS.map((d, i) => vacs[i]
+              ? '<td class="holiday-end">חופש</td>'
+              : '<td>' + d.end + '</td>').join('') + '</tr>';
 
-    // אחה״צ – רק שעות שבהן באמת יש פעילות פעילה השבוע (חוסך שורות ריקות בהדפסה)
+    // אחה״צ – רק שעות שבהן באמת יש פעילות בשבוע הזה (חוסך שורות ריקות בהדפסה)
     const times = [];
-    DAYS.forEach(day => visibleActs(day).forEach(act => {
+    DAYS.forEach((day, i) => weekActs(i).forEach(act => {
       if (times.indexOf(act.time) === -1) times.push(act.time);
     }));
     times.sort();
 
     times.forEach(time => {
       html += '<tr><td class="period-hour">' + time + '</td>';
-      DAYS.forEach(day => {
-        const acts = visibleActs(day).filter(a => a.time === time);
+      DAYS.forEach((day, i) => {
+        const acts = weekActs(i).filter(a => a.time === time);
         html += acts.length
           ? '<td class="act-cell">' + acts.map(a => chipHtml(a, true)).join('') + '</td>'
           : '<td class="empty-cell">—</td>';
@@ -870,6 +1125,84 @@
     document.getElementById('legendBar').innerHTML = parts.join('');
   }
 
+  /* ---------- לוח חופשות ---------- */
+
+  const HE_DAYS = ["ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"];
+
+  function toDate(iso) {
+    const [y, m, d] = iso.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+
+  function dayAndDate(iso) {
+    const d = toDate(iso);
+    return HE_DAYS[d.getDay()] + ' ' + d.getDate() + '.' + (d.getMonth() + 1);
+  }
+
+  function vacRange(v) {
+    return v.start === v.end ? dayAndDate(v.start)
+                             : dayAndDate(v.start) + ' – ' + dayAndDate(v.end);
+  }
+
+  function daysUntil(iso) {
+    return Math.round((toDate(iso) - startOfDay(TODAY)) / 86400000);
+  }
+
+  function vacState(v) {
+    if (v.noVacation) return 'none';
+    const t = startOfDay(TODAY);
+    if (t >= toDate(v.start) && t <= toDate(v.end)) return 'now';
+    if (t > toDate(v.end)) return 'past';
+    return 'future';
+  }
+
+  function vacCard(v, isNext) {
+    const state = vacState(v);
+    const cls = state === 'future' ? (isNext ? 'next' : '') : state;
+    const flag = state === 'now' ? '<span class="vac-flag">בחופשה עכשיו</span>'
+               : (isNext ? '<span class="vac-flag">החופשה הבאה</span>' : '');
+    const back = v.back ? 'חזרה ללימודים: ' + dayAndDate(v.back) : (v.note || '');
+    return '<div class="vac-card ' + cls + '">' +
+             '<span class="vac-icon">' + v.icon + '</span>' +
+             '<div>' +
+               '<div class="vac-name">' + v.name + '</div>' +
+               '<div class="vac-range">' + vacRange(v) + '</div>' +
+               (back ? '<div class="vac-back">' + back + '</div>' : '') +
+               flag +
+             '</div>' +
+           '</div>';
+  }
+
+  function buildVacations() {
+    const next = VACATIONS.filter(v => vacState(v) === 'future')[0];
+    const cards = VACATIONS.map(v => vacCard(v, v === next)).join('');
+    const html = '<h2>🗓️ לוח חופשות תשפ״ז</h2><div class="vac-grid">' + cards + '</div>';
+    ['vacSectionPage'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = html;
+    });
+
+    // באנר: בחופשה עכשיו / החופשה הבאה
+    const current = VACATIONS.filter(v => vacState(v) === 'now')[0];
+    let banner = '';
+    if (current) {
+      banner = '<div class="vac-banner on-vacation"><span class="vac-banner-icon">🏖️</span>' +
+               '<span>חופשת <b>' + current.name + '</b> – אין לימודים' +
+               (current.back ? ' • חזרה ללימודים ביום ' + dayAndDate(current.back) : '') +
+               '</span></div>';
+    } else if (next) {
+      const n = daysUntil(next.start);
+      const when = n === 1 ? 'מחר' : 'בעוד ' + n + ' ימים';
+      banner = '<div class="vac-banner"><span class="vac-banner-icon">🎒</span>' +
+               '<span>החופשה הבאה: <b>' + next.name + '</b> • ' + vacRange(next) +
+               ' (' + when + ')</span></div>';
+    }
+    ['vacBannerDesktop', 'vacBannerMobile', 'vacBannerPage'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = banner;
+    });
+  }
+
   /* ---------- תצוגת מובייל ---------- */
 
   let currentSelectedDay = 0;
@@ -882,10 +1215,12 @@
   function buildTabs() {
     const nav = document.getElementById('daySelector');
     nav.innerHTML = DAYS.map((day, i) => {
-      const u = day.uniform ? UNIFORMS[day.uniform] : null;
+      const vac = dayVacation(i);
+      const u = (!vac && day.uniform) ? UNIFORMS[day.uniform] : null;
+      const mark = vac ? '<span class="tab-vac">🎉</span>'
+                       : (u ? '<span class="tab-uniform">' + u.icon + '</span>' : '');
       return '<button class="day-tab" data-day="' + i + '" onclick="switchDay(' + i + ')">' +
-             day.tab + (u ? '<span class="tab-uniform">' + u.icon + '</span>' : '') +
-             '</button>';
+             day.tab + mark + '</button>';
     }).join('');
   }
 
@@ -905,6 +1240,26 @@
       </div>
     `).join('');
 
+    const vac = dayVacation(index);
+    const dateLabel = shortDate(dateOfDay(index));
+
+    // יום חופש – במקום שיעורים וחוגים
+    if (vac) {
+      container.innerHTML = `
+        <div class="card-header">
+          <div class="day-name">${data.name} <span style="font-size:0.8rem;font-weight:600;opacity:0.85;">${dateLabel}</span></div>
+          <div class="day-end-badge">🎉 חופש</div>
+        </div>
+        <div class="mobile-holiday">
+          <div class="mh-emoji">${vac.icon}</div>
+          <div class="mh-name">חופשת ${vac.name}</div>
+          <div class="mh-sub">אין לימודים</div>
+          ${vac.back ? `<div class="mh-back">חזרה ללימודים: ${dayAndDate(vac.back)}</div>` : ''}
+        </div>
+      `;
+      return;
+    }
+
     // תלבושת – רק בימים שצריך
     const u = data.uniform ? UNIFORMS[data.uniform] : null;
     const uniformHtml = u ? `
@@ -917,7 +1272,7 @@
       </div>
     ` : '';
 
-    const acts = visibleActs(data);
+    const acts = weekActs(index);
     let actsHtml;
     if (acts.length) {
       actsHtml = acts.map(act => {
@@ -937,7 +1292,7 @@
 
     container.innerHTML = `
       <div class="card-header">
-        <div class="day-name">${data.name}</div>
+        <div class="day-name">${data.name} <span style="font-size:0.8rem;font-weight:600;opacity:0.85;">${dateLabel}</span></div>
         <div class="day-end-badge">🔔 סיום: ${data.end}</div>
       </div>
       ${uniformHtml}
@@ -954,6 +1309,15 @@
 
   function switchDay(index) {
     renderDay(index);
+  }
+
+  function toggleVacationsView() {
+    document.body.classList.toggle('show-vacations');
+    const on = document.body.classList.contains('show-vacations');
+    document.getElementById('vacToggleText').innerText = on ? 'מערכת שעות' : 'לוח חופשות';
+    document.getElementById('vacToggleBtn').classList.toggle('btn-primary', on);
+    document.getElementById('vacToggleBtn').classList.toggle('btn-outline', !on);
+    window.scrollTo(0, 0);
   }
 
   function toggleFullTableView() {
@@ -976,12 +1340,14 @@
     buildTableHead();
     buildTableBody();
     buildLegend();
+    buildVacations();
     buildTabs();
 
     fitPrintRows();
 
     document.getElementById('printDateNote').innerText =
-      '• נכון ל-' + TODAY.getDate() + '.' + (TODAY.getMonth() + 1) + '.' + TODAY.getFullYear();
+      '• שבוע ' + shortDate(dateOfDay(0)) + ' – ' + shortDate(dateOfDay(5)) +
+      '.' + dateOfDay(5).getFullYear();
 
     const today = getTodayIndex();
     const tabs = document.querySelectorAll('.day-tab');
