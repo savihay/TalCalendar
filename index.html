@@ -3,722 +3,902 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>מערכת שעות שבועית וחוגים - טל</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
+  <title>מערכת שעות שבועית - טל</title>
   <style>
-    @page {
-      size: A4 landscape;
-      margin: 4mm 6mm;
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+
+    :root {
+      --primary: #4338ca;
+      --border-color: #2b2b2b;
+      --bg-header: #ffffff;
+      --bg-lesson: #ffffff;
+      --bg-end: #f8fafc;
+      --basketball-bg: #fff7ed;
+      --basketball-border: #f97316;
+      --basketball-text: #9a3412;
+      --scouts-bg: #f0fdf4;
+      --scouts-border: #22c55e;
+      --scouts-text: #166534;
+      --gifted-bg: #faf5ff;
+      --gifted-border: #a855f7;
+      --gifted-text: #6b21a8;
+      --einat-bg: #fdf2f8;
+      --einat-border: #ec4899;
+      --einat-text: #9d174d;
+      --yahalom-bg: #eff6ff;
+      --yahalom-border: #3b82f6;
+      --yahalom-text: #1e40af;
     }
 
     * {
       box-sizing: border-box;
-      -webkit-print-color-adjust: exact !important;
-      print-color-adjust: exact !important;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
     }
 
     body {
-      margin: 0;
-      padding: 10px;
-      font-family: 'Varela Round', 'Rubik', sans-serif;
-      background-color: #f1f5f9;
-      color: #0f172a;
+      font-family: 'Rubik', system-ui, -apple-system, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    .no-print-bar {
-      margin-bottom: 10px;
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: center;
+    /* Top Action Bar */
+    .top-bar {
+      width: 100%;
       background: #ffffff;
-      padding: 8px 16px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-      border: 1px solid #e2e8f0;
-    }
-
-    .btn-print {
-      background: linear-gradient(135deg, #f43f5e 0%, #8b5cf6 100%);
-      color: white;
-      border: none;
-      padding: 9px 22px;
-      border-radius: 9999px;
-      font-size: 14.5px;
-      font-weight: 700;
-      font-family: inherit;
-      cursor: pointer;
-      box-shadow: 0 4px 14px rgba(244, 63, 94, 0.35);
-      transition: all 0.2s ease;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 10px 16px;
       display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .btn-print:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(244, 63, 94, 0.45);
-    }
-
-    .print-tip {
-      font-size: 13px;
-      color: #475569;
-      font-weight: 600;
-    }
-
-    .kbd-shortcut {
-      background: #e2e8f0;
-      color: #0f172a;
-      padding: 2px 7px;
-      border-radius: 6px;
-      font-size: 12px;
-      font-weight: 800;
-      border: 1px solid #cbd5e1;
-    }
-
-    .btn-print {
-      background: linear-gradient(135deg, #f43f5e 0%, #8b5cf6 100%);
-      color: white;
-      border: none;
-      padding: 9px 24px;
-      border-radius: 9999px;
-      font-size: 15px;
-      font-weight: 700;
-      font-family: inherit;
-      cursor: pointer;
-      box-shadow: 0 4px 14px rgba(244, 63, 94, 0.35);
-      transition: all 0.2s ease;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .btn-print:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(244, 63, 94, 0.45);
-    }
-
-    .print-tip {
-      font-size: 13px;
-      color: #64748b;
-      font-weight: 600;
-    }
-
-    .a4-sheet {
-      width: 290mm;
-      height: 198mm;
-      max-width: 100%;
-      background: #ffffff;
-      padding: 6mm 10mm;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.07);
-      position: relative;
-      display: flex;
-      flex-direction: column;
       justify-content: space-between;
-      overflow: hidden;
+      align-items: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .top-bar .title {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .top-bar .btn-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: #4f46e5;
+      color: #ffffff;
+    }
+    .btn-primary:hover { background: #4338ca; }
+
+    .btn-outline {
+      background: #ffffff;
+      border-color: #cbd5e1;
+      color: #334155;
+    }
+    .btn-outline:hover { background: #f8fafc; }
+
+    /* =========================================
+       DESKTOP & PRINT TABLE VIEW
+       ========================================= */
+    .desktop-view {
+      width: 100%;
+      max-width: 1100px;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page-container {
+      background: #fff;
+      width: 100%;
+      padding: 20px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
       border: 1px solid #e2e8f0;
     }
 
-    /* Decorative Illustrations matching original image */
-    .deco-plane {
-      position: absolute;
-      top: 8px;
-      left: 18px;
-      pointer-events: none;
-    }
-
-    .deco-flower-bottom {
-      position: absolute;
-      bottom: 6px;
-      left: 12px;
-      pointer-events: none;
-      opacity: 0.85;
-    }
-
-    .deco-pencils {
-      position: absolute;
-      bottom: 5px;
-      right: 14px;
-      pointer-events: none;
-    }
-
-    .header-area {
+    .schedule-header {
       text-align: center;
-      margin-bottom: 5px;
-      padding-top: 2px;
+      margin-bottom: 12px;
     }
 
-    .main-title {
-      font-family: 'Rubik', sans-serif;
-      font-size: 26px;
-      font-weight: 900;
-      color: #1e1b4b;
-      margin: 0;
-      letter-spacing: -0.3px;
-      line-height: 1.1;
+    .schedule-title {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: #1e293b;
+      letter-spacing: -0.5px;
     }
 
-    .sub-title {
-      font-size: 13.5px;
-      font-weight: 700;
-      color: #db2777;
-      margin-top: 1px;
+    .schedule-subtitle {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-top: 2px;
     }
 
-    .schedule-grid {
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .schedule-table {
       width: 100%;
       border-collapse: collapse;
       table-layout: fixed;
-      border: 2px solid #334155;
-      background: #ffffff;
+      font-size: 0.85rem;
     }
 
-    .schedule-grid th, 
-    .schedule-grid td {
-      border: 1.5px solid #334155;
+    .schedule-table th,
+    .schedule-table td {
+      border: 1.5px solid var(--border-color);
       text-align: center;
-      padding: 2.5px 3px;
       vertical-align: middle;
-      font-size: 12.5px;
-      line-height: 1.15;
+      padding: 4px;
+      height: 34px;
     }
 
-    .col-num {
-      width: 7.5%;
-      font-weight: 800;
+    .col-period { width: 44px; font-weight: 700; background: #fafafa; }
+    .col-day { width: calc((100% - 44px) / 6); }
+
+    .header-row th {
       background: #f8fafc;
-      color: #334155;
-    }
-
-    .col-day {
-      width: 15.4%;
-    }
-
-    thead th {
-      font-family: 'Rubik', sans-serif;
-      font-size: 15px;
-      font-weight: 800;
-      padding: 5px 3px !important;
-      background-color: #f1f5f9;
+      font-size: 0.95rem;
+      font-weight: 700;
       color: #0f172a;
+      height: 38px;
     }
 
-    .th-heart {
-      color: #f43f5e;
-      font-size: 17px;
-    }
-
-    .lesson-idx {
-      font-family: 'Rubik', sans-serif;
-      font-size: 14px;
-      font-weight: 800;
+    .lesson-cell {
+      background: #fff;
+      font-weight: 500;
       color: #1e293b;
     }
 
-    .lesson-name {
-      font-weight: 600;
-      color: #1e293b;
-      height: 23px;
+    .end-row td {
+      background: #f1f5f9;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: #334155;
+      height: 28px;
     }
 
-    .tag-math { color: #0369a1; font-weight: 700; }
-    .tag-lang { color: #b45309; font-weight: 700; }
-    .tag-sci { color: #047857; font-weight: 700; }
-    .tag-art { color: #a21caf; font-weight: 700; }
-    .tag-eng { color: #4338ca; font-weight: 700; }
-    .tag-pe { color: #be123c; font-weight: 800; }
-    .tag-heritage { color: #6d28d9; font-weight: 700; }
+    .period-hour {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #475569;
+      background: #f8fafc;
+    }
 
     .empty-cell {
-      background-color: #f8fafc;
       color: #cbd5e1;
-      font-size: 15px;
-    }
-
-    /* School End Row */
-    .row-dismissal td {
-      background-color: #e2e8f0;
-      font-weight: 700;
-      padding: 3px 2px;
-      border-top: 2px solid #1e293b;
-      border-bottom: 2px solid #1e293b;
-    }
-
-    .dismiss-title {
-      font-size: 11px;
-      font-weight: 800;
-      color: #0f172a;
-      line-height: 1;
-    }
-
-    .dismiss-pill {
-      display: inline-block;
-      background: #0f172a;
-      color: #f8fafc;
-      font-size: 11.5px;
-      font-weight: 800;
-      padding: 1px 8px;
-      border-radius: 9999px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-
-    /* Afternoon Activities Rows */
-    .afternoon-row-1 {
-      background-color: #fffbeb;
-    }
-
-    .afternoon-row-2 {
-      background-color: #fff7ed;
-    }
-
-    .afternoon-label {
-      font-family: 'Rubik', sans-serif;
-      font-size: 11.5px;
-      font-weight: 800;
-      line-height: 1.2;
-      padding: 4px 2px !important;
-    }
-
-    .lbl-act1 {
-      background: #fef3c7;
-      color: #92400e;
-    }
-
-    .lbl-act2 {
-      background: #ffedd5;
-      color: #9a3412;
+      font-size: 0.9rem;
     }
 
     .act-cell {
-      padding: 2px 4px !important;
-      height: 32px;
+      padding: 2px 4px;
+      vertical-align: middle;
     }
 
-    .act-card {
-      display: flex;
+    .compact-act {
+      display: inline-flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       gap: 5px;
-      background: #ffffff;
-      border: 1px solid #cbd5e1;
-      border-radius: 6px;
+      width: 100%;
       padding: 2px 6px;
-      text-align: right;
-      height: 100%;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-    }
-
-    .act-time-pill {
-      font-family: 'Rubik', sans-serif;
-      font-size: 10px;
-      font-weight: 800;
-      padding: 1px 5px;
-      border-radius: 9999px;
-      white-space: nowrap;
-      flex-shrink: 0;
-      line-height: 1.2;
-    }
-
-    .time-orange {
-      background: #ffedd5;
-      color: #c2410c;
-      border: 1px solid #fdba74;
-    }
-
-    .time-purple {
-      background: #f3e8ff;
-      color: #7e22ce;
-      border: 1px solid #d8b4fe;
-    }
-
-    .time-green {
-      background: #dcfce7;
-      color: #15803d;
-      border: 1px solid #86efac;
-    }
-
-    .time-blue {
-      background: #e0f2fe;
-      color: #0369a1;
-      border: 1px solid #7dd3fc;
-    }
-
-    .time-pink {
-      background: #fce7f3;
-      color: #be185d;
-      border: 1px solid #fbcfe8;
-    }
-
-    .act-content {
-      display: flex;
-      align-items: baseline;
-      gap: 4px;
-      flex-wrap: wrap;
-      overflow: hidden;
-      line-height: 1.15;
-    }
-
-    .act-title {
-      font-size: 11px;
-      font-weight: 700;
-      color: #1e293b;
-      white-space: nowrap;
-    }
-
-    .act-subtext {
-      font-size: 9.5px;
-      font-weight: 600;
-      color: #64748b;
-      white-space: nowrap;
-    }
-
-    .free-slot {
-      color: #94a3b8;
-      font-size: 11px;
-      font-weight: 600;
-      background: rgba(255,255,255,0.6);
       border-radius: 6px;
-      padding: 4px;
-      border: 1px dashed #cbd5e1;
+      border: 1px solid;
+      font-size: 0.76rem;
+      font-weight: 600;
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .bottom-info-bar {
-      margin-top: 6px;
+    .compact-act.basketball { background: var(--basketball-bg); border-color: var(--basketball-border); color: var(--basketball-text); }
+    .compact-act.scouts     { background: var(--scouts-bg); border-color: var(--scouts-border); color: var(--scouts-text); }
+    .compact-act.gifted     { background: var(--gifted-bg); border-color: var(--gifted-border); color: var(--gifted-text); }
+    .compact-act.einat      { background: var(--einat-bg); border-color: var(--einat-border); color: var(--einat-text); }
+    .compact-act.yahalom    { background: var(--yahalom-bg); border-color: var(--yahalom-border); color: var(--yahalom-text); }
+
+    .time-pill {
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 10px;
+      background: rgba(0,0,0,0.06);
+    }
+
+    /* =========================================
+       MOBILE APP VIEW (Hidden on desktop)
+       ========================================= */
+    .mobile-view {
+      display: none;
+      width: 100%;
+      max-width: 540px;
+      padding: 12px 14px 40px 14px;
+    }
+
+    /* Day Selector Pills */
+    .day-selector {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 6px;
+      background: #e2e8f0;
+      padding: 5px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+
+    .day-tab {
+      padding: 8px 2px;
+      border-radius: 8px;
+      border: none;
+      background: transparent;
+      color: #475569;
+      font-weight: 600;
+      font-size: 0.84rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+
+    .day-tab.active {
+      background: #ffffff;
+      color: #4338ca;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      font-weight: 700;
+    }
+
+    .day-tab.today {
+      position: relative;
+    }
+    .day-tab.today::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 4px;
+      background: #4f46e5;
+      border-radius: 50%;
+    }
+
+    /* Mobile Day Card */
+    .mobile-day-card {
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      overflow: hidden;
+    }
+
+    .card-header {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: #fff;
+      padding: 14px 18px;
       display: flex;
       justify-content: space-between;
-      gap: 8px;
-      background: #f8fafc;
-      border: 1.5px dashed #cbd5e1;
-      border-radius: 10px;
-      padding: 4px 12px;
-      font-size: 11px;
-      font-weight: 700;
-      color: #334155;
+      align-items: center;
     }
 
-    .info-item {
+    .card-header .day-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+    }
+
+    .card-header .day-end-badge {
+      font-size: 0.8rem;
+      background: rgba(255,255,255,0.2);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 600;
+      backdrop-filter: blur(4px);
+    }
+
+    .section-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #64748b;
+      padding: 12px 18px 6px 18px;
+      letter-spacing: 0.3px;
+    }
+
+    /* Lessons Timeline */
+    .lessons-list {
+      padding: 0 16px 8px 16px;
+    }
+
+    .lesson-item {
       display: flex;
       align-items: center;
-      gap: 5px;
+      padding: 8px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .lesson-item:last-child {
+      border-bottom: none;
+    }
+
+    .lesson-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #f1f5f9;
+      color: #475569;
+      font-weight: 700;
+      font-size: 0.78rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 12px;
+      flex-shrink: 0;
+    }
+
+    .lesson-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    /* Afternoon Activities in Mobile */
+    .afternoon-section {
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      padding: 12px 16px 16px 16px;
+    }
+
+    .mobile-act-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid;
+      margin-bottom: 8px;
+    }
+    .mobile-act-card:last-child { margin-bottom: 0; }
+
+    .mobile-act-card.basketball { background: var(--basketball-bg); border-color: var(--basketball-border); color: var(--basketball-text); }
+    .mobile-act-card.scouts     { background: var(--scouts-bg); border-color: var(--scouts-border); color: var(--scouts-text); }
+    .mobile-act-card.gifted     { background: var(--gifted-bg); border-color: var(--gifted-border); color: var(--gifted-text); }
+    .mobile-act-card.einat      { background: var(--einat-bg); border-color: var(--einat-border); color: var(--einat-text); }
+    .mobile-act-card.yahalom    { background: var(--yahalom-bg); border-color: var(--yahalom-border); color: var(--yahalom-text); }
+
+    .mobile-act-time {
+      font-size: 0.95rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.7);
+      flex-shrink: 0;
+    }
+
+    .mobile-act-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .mobile-act-sub {
+      font-size: 0.75rem;
+      opacity: 0.85;
+      font-weight: 500;
+    }
+
+    .no-activities {
+      color: #94a3b8;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-align: center;
+      padding: 8px 0;
+    }
+
+    /* All-days list for mobile */
+    .all-days-container {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      .desktop-view {
+        display: none;
+      }
+      .mobile-view {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      .desktop-view {
+        display: flex;
+      }
+      .mobile-view {
+        display: none !important;
+      }
+    }
+
+    /* Force Table view on mobile if user toggles */
+    body.show-full-table .desktop-view {
+      display: block !important;
+      padding: 8px;
+    }
+    body.show-full-table .mobile-view {
+      display: none !important;
+    }
+    body.show-full-table .page-container {
+      border-radius: 0;
+      padding: 10px;
+    }
+
+    /* =========================================
+       PRINT STYLES (Always A4 Landscape Table)
+       ========================================= */
+    @page {
+      size: A4 landscape;
+      margin: 6mm;
     }
 
     @media print {
       body {
-        padding: 0;
-        margin: 0;
-        background: transparent;
+        background: #ffffff !important;
+        color: #000000 !important;
+        margin: 0 !important;
+        padding: 0 !important;
       }
-
-      .no-print-bar {
+      .top-bar, .mobile-view {
         display: none !important;
       }
-
-      .a4-sheet {
+      .desktop-view {
+        display: block !important;
+        max-width: none !important;
+        padding: 0 !important;
         width: 100% !important;
-        height: 100% !important;
-        max-width: none;
-        box-shadow: none;
-        border-radius: 0;
-        border: none;
-        padding: 2mm 4mm;
+      }
+      .page-container {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+      }
+      .schedule-title { font-size: 1.5rem; }
+      .schedule-table th, .schedule-table td {
+        border-color: #000 !important;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Controls (hidden on print) -->
-  <div class="no-print-bar">
-    <button class="btn-print" type="button" onclick="executePrint()">
-      🖨️ לחץ כאן להדפסה / שמירה כ-PDF
-    </button>
-    <span class="print-tip">
-      אם הכפתור לא מגיב בתצוגה: לחצו <kbd class="kbd-shortcut">Ctrl</kbd> + <kbd class="kbd-shortcut">P</kbd> (או <kbd class="kbd-shortcut">⌘ Cmd</kbd> + <kbd class="kbd-shortcut">P</kbd>)
-    </span>
-  </div>
+  <!-- Top Navigation & Action Bar -->
+  <header class="top-bar">
+    <div class="title">
+      <span>🗓️</span>
+      <span>מערכת שעות - טל</span>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-outline" id="viewToggleBtn" onclick="toggleFullTableView()">
+        📱 <span id="toggleText">טבלה מלאה</span>
+      </button>
+      <button class="btn btn-primary" onclick="window.print()">
+        🖨️ הדפסה
+      </button>
+    </div>
+  </header>
 
-  <div class="a4-sheet">
+  <!-- ====================================================
+       MOBILE APP VIEW (TABS + DAY CARDS)
+       ==================================================== -->
+  <main class="mobile-view" id="mobileAppView">
+    <!-- Day Tabs -->
+    <nav class="day-selector" aria-label="בחירת יום">
+      <button class="day-tab" data-day="0" onclick="switchDay(0)">א׳</button>
+      <button class="day-tab" data-day="1" onclick="switchDay(1)">ב׳</button>
+      <button class="day-tab" data-day="2" onclick="switchDay(2)">ג׳</button>
+      <button class="day-tab" data-day="3" onclick="switchDay(3)">ד׳</button>
+      <button class="day-tab" data-day="4" onclick="switchDay(4)">ה׳</button>
+      <button class="day-tab" data-day="5" onclick="switchDay(5)">ו׳</button>
+    </nav>
 
-    <!-- Top Left Paper Airplane Doodle -->
-    <svg class="deco-plane" width="70" height="42" viewBox="0 0 100 60" fill="none">
-      <path d="M5 30 L85 8 L48 52 L36 34 L12 28 Z" fill="#fbcfe8" opacity="0.8"/>
-      <path d="M85 8 L48 52 L40 37" stroke="#ec4899" stroke-width="2.2" stroke-linejoin="round"/>
-      <path d="M85 8 L36 34" stroke="#ec4899" stroke-width="2.2"/>
-      <path d="M5 48 C 20 44, 30 52, 45 44" stroke="#f472b6" stroke-width="2" stroke-dasharray="3 3"/>
-    </svg>
+    <!-- Dynamic Day Container -->
+    <section id="singleDayCard" class="mobile-day-card">
+      <!-- Injected via JavaScript -->
+    </section>
+  </main>
 
-    <!-- Header -->
-    <header class="header-area">
-      <h1 class="main-title">מערכת שעות כיתתית וחוגים</h1>
-      <div class="sub-title">הלו״ז השבועי המלא של טל ⭐</div>
-    </header>
-
-    <table class="schedule-grid">
-      <thead>
-        <tr>
-          <th class="col-num th-heart">♡</th>
-          <th class="col-day">יום ראשון</th>
-          <th class="col-day">יום שני</th>
-          <th class="col-day">יום שלישי</th>
-          <th class="col-day">יום רביעי</th>
-          <th class="col-day">יום חמישי</th>
-          <th class="col-day">יום שישי</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- שיעור 1 -->
-        <tr>
-          <td class="col-num lesson-idx">1</td>
-          <td class="lesson-name">כישורי חיים</td>
-          <td class="lesson-name">ספר זה כל הסיפור</td>
-          <td class="lesson-name tag-heritage">מורשת</td>
-          <td class="lesson-name tag-math">מתמטיקה</td>
-          <td class="lesson-name tag-math">מתמטיקה</td>
-          <td class="lesson-name tag-sci">מדעים</td>
-        </tr>
-
-        <!-- שיעור 2 -->
-        <tr>
-          <td class="col-num lesson-idx">2</td>
-          <td class="lesson-name tag-math">מתמטיקה</td>
-          <td class="lesson-name tag-lang">כישורי שפה</td>
-          <td class="lesson-name tag-math">מתמטיקה</td>
-          <td class="lesson-name tag-lang">כישורי שפה</td>
-          <td class="lesson-name tag-math">מתמטיקה</td>
-          <td class="lesson-name tag-lang">כישורי שפה</td>
-        </tr>
-
-        <!-- שיעור 3 -->
-        <tr>
-          <td class="col-num lesson-idx">3</td>
-          <td class="lesson-name tag-art">אומנות</td>
-          <td class="lesson-name tag-lang">כישורי שפה</td>
-          <td class="lesson-name tag-eng">אנגלית</td>
-          <td class="lesson-name tag-lang">כישורי שפה</td>
-          <td class="lesson-name">תורה, חברתי</td>
-          <td class="lesson-name tag-lang">כישורי שפה</td>
-        </tr>
-
-        <!-- שיעור 4 -->
-        <tr>
-          <td class="col-num lesson-idx">4</td>
-          <td class="lesson-name tag-art">אומנות</td>
-          <td class="lesson-name">מגלים עולמות (שכבתי)</td>
-          <td class="lesson-name tag-pe">חנ״ג 🏃‍♂️</td>
-          <td class="lesson-name tag-sci">מדעים</td>
-          <td class="lesson-name tag-sci">מדעים</td>
-          <td class="lesson-name tag-pe">חנ״ג 🏃‍♂️</td>
-        </tr>
-
-        <!-- שיעור 5 -->
-        <tr>
-          <td class="col-num lesson-idx">5</td>
-          <td class="lesson-name tag-eng">אנגלית</td>
-          <td class="lesson-name tag-eng">אנגלית</td>
-          <td class="lesson-name">תורה</td>
-          <td class="lesson-name">תלון/ משחקי חשיבה</td>
-          <td class="lesson-name tag-eng">אנגלית</td>
-          <td class="empty-cell">—</td>
-        </tr>
-
-        <!-- שיעור 6 -->
-        <tr>
-          <td class="col-num lesson-idx">6</td>
-          <td class="lesson-name tag-lang">כישורי שפה</td>
-          <td class="lesson-name">מפתח הלב</td>
-          <td class="empty-cell">—</td>
-          <td class="lesson-name">מולדת</td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-        </tr>
-
-        <!-- שורת סיום בית ספר -->
-        <tr class="row-dismissal">
-          <td class="col-num dismiss-title">סיום בי״ס</td>
-          <td><span class="dismiss-pill">13:30</span></td>
-          <td><span class="dismiss-pill">13:30</span></td>
-          <td><span class="dismiss-pill">12:45</span></td>
-          <td><span class="dismiss-pill">13:30</span></td>
-          <td><span class="dismiss-pill">12:45</span></td>
-          <td><span class="dismiss-pill">11:45</span></td>
-        </tr>
-
-        <!-- שעה 14:30 -->
-        <tr>
-          <td class="col-num lesson-idx" style="font-size: 11px; background: #f8fafc; color: #64748b;">14:30</td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="act-cell" style="background: #f8fafc;">
-            <div class="act-card" style="border-right: 3px solid #3b82f6;">
-              <span class="act-time-pill time-blue">14:30</span>
-              <div class="act-content">
-                <span class="act-title" style="color: #1e3a8a;">תכנית מצטיינים</span>
-                <span class="act-subtext">ביה״ס יהל״ם (מ-8/10)</span>
-              </div>
-            </div>
-          </td>
-          <td class="empty-cell">—</td>
-        </tr>
-
-        <!-- שעה 15:00 -->
-        <tr>
-          <td class="col-num lesson-idx" style="font-size: 11px; background: #f8fafc; color: #64748b;">15:00</td>
-          <td class="act-cell" style="background: #f8fafc;">
-            <div class="act-card" style="border-right: 3px solid #f97316;">
-              <span class="act-time-pill time-orange">15:00</span>
-              <div class="act-content">
-                <span class="act-title">כדורסל 🏀</span>
-              </div>
-            </div>
-          </td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="act-cell" style="background: #f8fafc;">
-            <div class="act-card" style="border-right: 3px solid #f97316;">
-              <span class="act-time-pill time-orange">15:00</span>
-              <div class="act-content">
-                <span class="act-title">כדורסל 🏀</span>
-              </div>
-            </div>
-          </td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-        </tr>
-
-        <!-- שעה 16:00 -->
-        <tr>
-          <td class="col-num lesson-idx" style="font-size: 11px; background: #f8fafc; color: #64748b;">16:00</td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="act-cell" style="background: #f8fafc;">
-            <div class="act-card" style="border-right: 3px solid #a855f7;">
-              <span class="act-time-pill time-purple">16:00</span>
-              <div class="act-content">
-                <span class="act-title">מפגש מחוננים</span>
-                <span class="act-subtext">(השבוע)</span>
-              </div>
-            </div>
-          </td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="act-cell" style="background: #f8fafc;">
-            <div class="act-card" style="border-right: 3px solid #16a34a;">
-              <span class="act-time-pill time-green">16:00</span>
-              <div class="act-content">
-                <span class="act-title">צופים בשבט ⚜️⛺</span>
-              </div>
-            </div>
-          </td>
-        </tr>
-
-        <!-- שעה 17:00 -->
-        <tr>
-          <td class="col-num lesson-idx" style="font-size: 11px; background: #f8fafc; color: #64748b;">17:00</td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="act-cell" style="background: #f8fafc;">
-            <div class="act-card" style="border-right: 3px solid #16a34a;">
-              <span class="act-time-pill time-green">17:00</span>
-              <div class="act-content">
-                <span class="act-title">צופים ברייספלד ⚜️⛺</span>
-              </div>
-            </div>
-          </td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-        </tr>
-
-        <!-- שעה 18:00 -->
-        <tr>
-          <td class="col-num lesson-idx" style="font-size: 11px; background: #f8fafc; color: #64748b;">18:00</td>
-          <td class="act-cell" style="background: #f8fafc;">
-            <div class="act-card" style="border-right: 3px solid #ec4899;">
-              <span class="act-time-pill time-pink">18:00</span>
-              <div class="act-content">
-                <span class="act-title">מפגש עם עינת</span>
-              </div>
-            </div>
-          </td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-          <td class="empty-cell">—</td>
-        </tr>
-
-      </tbody>
-    </table>
-
-    <!-- Bottom Reminder Strip -->
-    <div class="bottom-info-bar">
-      <div class="info-item">
-        <span>👟</span>
-        <span><strong>תלבושת ספורט:</strong> ימים שלישי ושישי (חנ״ג)</span>
+  <!-- ====================================================
+       DESKTOP & PRINT TABLE VIEW
+       ==================================================== -->
+  <main class="desktop-view">
+    <div class="page-container">
+      <div class="schedule-header">
+        <h1 class="schedule-title">מערכת שעות שבועית</h1>
+        <p class="schedule-subtitle">שנת הלימודים תשפ״ו • כיתה ד׳</p>
       </div>
-      <div class="info-item">
-        <span>🏀</span>
-        <span><strong>כדורסל:</strong> ימים ראשון ורביעי ב-15:00</span>
-      </div>
-      <div class="info-item">
-        <span>⚜️</span>
-        <span><strong>צופים:</strong> יום ג' ב-17:00 (רייספלד) | יום ו' ב-16:00 (בשבט)</span>
+
+      <div class="table-wrapper">
+        <table class="schedule-table">
+          <thead>
+            <tr class="header-row">
+              <th class="col-period">#</th>
+              <th class="col-day">יום ראשון</th>
+              <th class="col-day">יום שני</th>
+              <th class="col-day">יום שלישי</th>
+              <th class="col-day">יום רביעי</th>
+              <th class="col-day">יום חמישי</th>
+              <th class="col-day">יום שישי</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Period 1 -->
+            <tr>
+              <td class="col-period">1</td>
+              <td class="lesson-cell">כישורי חיים</td>
+              <td class="lesson-cell">ספר זה כל הסיפור</td>
+              <td class="lesson-cell">מורשת</td>
+              <td class="lesson-cell">מתמטיקה</td>
+              <td class="lesson-cell">מתמטיקה</td>
+              <td class="lesson-cell">מדעים</td>
+            </tr>
+
+            <!-- Period 2 -->
+            <tr>
+              <td class="col-period">2</td>
+              <td class="lesson-cell">מתמטיקה</td>
+              <td class="lesson-cell">כישורי שפה</td>
+              <td class="lesson-cell">מתמטיקה</td>
+              <td class="lesson-cell">כישורי שפה</td>
+              <td class="lesson-cell">מתמטיקה</td>
+              <td class="lesson-cell">כישורי שפה</td>
+            </tr>
+
+            <!-- Period 3 -->
+            <tr>
+              <td class="col-period">3</td>
+              <td class="lesson-cell">אומנות</td>
+              <td class="lesson-cell">כישורי שפה</td>
+              <td class="lesson-cell">אנגלית</td>
+              <td class="lesson-cell">כישורי שפה</td>
+              <td class="lesson-cell">תורה, חברתי</td>
+              <td class="lesson-cell">כישורי שפה</td>
+            </tr>
+
+            <!-- Period 4 -->
+            <tr>
+              <td class="col-period">4</td>
+              <td class="lesson-cell">אומנות</td>
+              <td class="lesson-cell">מגלים עולמות-שכבתי</td>
+              <td class="lesson-cell">חנ״ג 🏃‍♂️</td>
+              <td class="lesson-cell">מדעים</td>
+              <td class="lesson-cell">מדעים</td>
+              <td class="lesson-cell">חנ״ג 🏃‍♂️</td>
+            </tr>
+
+            <!-- Period 5 -->
+            <tr>
+              <td class="col-period">5</td>
+              <td class="lesson-cell">אנגלית</td>
+              <td class="lesson-cell">אנגלית</td>
+              <td class="lesson-cell">תורה</td>
+              <td class="lesson-cell">תלון/משחקי חשיבה</td>
+              <td class="lesson-cell">אנגלית</td>
+              <td class="empty-cell">—</td>
+            </tr>
+
+            <!-- Period 6 -->
+            <tr>
+              <td class="col-period">6</td>
+              <td class="lesson-cell">כישורי שפה</td>
+              <td class="lesson-cell">מפתח הלב</td>
+              <td class="empty-cell">—</td>
+              <td class="lesson-cell">מולדת</td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+            </tr>
+
+            <!-- School End Row -->
+            <tr class="end-row">
+              <td class="period-hour">סיום</td>
+              <td>13:30</td>
+              <td>13:30</td>
+              <td>12:45</td>
+              <td>13:30</td>
+              <td>12:45</td>
+              <td>11:45</td>
+            </tr>
+
+            <!-- Afternoon: 14:30 -->
+            <tr>
+              <td class="period-hour">14:30</td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="act-cell">
+                <div class="compact-act yahalom">
+                  <span class="time-pill">14:30</span>
+                  <span>תכנית מצטיינים (יהל״ם)</span>
+                </div>
+              </td>
+              <td class="empty-cell">—</td>
+            </tr>
+
+            <!-- Afternoon: 15:00 -->
+            <tr>
+              <td class="period-hour">15:00</td>
+              <td class="act-cell">
+                <div class="compact-act basketball">
+                  <span class="time-pill">15:00</span>
+                  <span>כדורסל 🏀</span>
+                </div>
+              </td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="act-cell">
+                <div class="compact-act basketball">
+                  <span class="time-pill">15:00</span>
+                  <span>כדורסל 🏀</span>
+                </div>
+              </td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+            </tr>
+
+            <!-- Afternoon: 16:00 -->
+            <tr>
+              <td class="period-hour">16:00</td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="act-cell">
+                <div class="compact-act gifted">
+                  <span class="time-pill">16:00</span>
+                  <span>מפגש מחוננים</span>
+                </div>
+              </td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="act-cell">
+                <div class="compact-act scouts">
+                  <span class="time-pill">16:00</span>
+                  <span>צופים בשבט ⚜️⛺</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Afternoon: 17:00 -->
+            <tr>
+              <td class="period-hour">17:00</td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="act-cell">
+                <div class="compact-act scouts">
+                  <span class="time-pill">17:00</span>
+                  <span>צופים ברייספלד ⚜️⛺</span>
+                </div>
+              </td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+            </tr>
+
+            <!-- Afternoon: 18:00 -->
+            <tr>
+              <td class="period-hour">18:00</td>
+              <td class="act-cell">
+                <div class="compact-act einat">
+                  <span class="time-pill">18:00</span>
+                  <span>מפגש עם עינת</span>
+                </div>
+              </td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell">—</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-
-    <!-- Bottom Left Doodle (Flower) -->
-    <svg class="deco-flower-bottom" width="45" height="45" viewBox="0 0 100 100" fill="none">
-      <circle cx="35" cy="65" r="14" fill="#fbcfe8"/>
-      <circle cx="65" cy="65" r="14" fill="#fbcfe8"/>
-      <circle cx="50" cy="45" r="14" fill="#fbcfe8"/>
-      <circle cx="50" cy="65" r="11" fill="#f43f5e"/>
-      <path d="M50 78 L50 98" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
-      <path d="M50 88 Q65 84 62 94" stroke="#4ade80" stroke-width="3.5" fill="none"/>
-    </svg>
-
-    <!-- Bottom Right Doodle (Colored Pencils) -->
-    <svg class="deco-pencils" width="48" height="42" viewBox="0 0 55 48" fill="none">
-      <rect x="8" y="16" width="9" height="28" rx="2" fill="#fbbf24" transform="rotate(-18 8 16)"/>
-      <polygon points="8,16 17,13 12,4" fill="#f87171"/>
-      <rect x="25" y="10" width="9" height="34" rx="2" fill="#34d399" transform="rotate(8 25 10)"/>
-      <polygon points="25,10 34,11 31,1" fill="#38bdf8"/>
-    </svg>
-
-  </div>
+  </main>
 
   <script>
-    function executePrint() {
-      // Step 1: Ensure window has focus (critical when running inside iframe preview)
-      window.focus();
-
-      try {
-        window.print();
-      } catch (err) {
-        console.warn("Direct window.print() failed, attempting popup fallback...", err);
-        // Fallback: Open isolated window if iframe security policies restrict modals
-        try {
-          const printableWindow = window.open('', '_blank');
-          if (printableWindow) {
-            printableWindow.document.open();
-            printableWindow.document.write(document.documentElement.outerHTML);
-            printableWindow.document.close();
-            printableWindow.focus();
-            printableWindow.print();
-          }
-        } catch (popupErr) {
-          console.error("Popup fallback was also prevented by browser permissions.", popupErr);
-        }
+    // Data definition for mobile view
+    const daysData = [
+      {
+        dayName: "יום ראשון",
+        endTime: "13:30",
+        lessons: [
+          "כישורי חיים",
+          "מתמטיקה",
+          "אומנות",
+          "אומנות",
+          "אנגלית",
+          "כישורי שפה"
+        ],
+        activities: [
+          { time: "15:00", title: "כדורסל 🏀", sub: "", type: "basketball" },
+          { time: "18:00", title: "מפגש עם עינת", sub: "", type: "einat" }
+        ]
+      },
+      {
+        dayName: "יום שני",
+        endTime: "13:30",
+        lessons: [
+          "ספר זה כל הסיפור",
+          "כישורי שפה",
+          "כישורי שפה",
+          "מגלים עולמות-שכבתי",
+          "אנגלית",
+          "מפתח הלב"
+        ],
+        activities: []
+      },
+      {
+        dayName: "יום שלישי",
+        endTime: "12:45",
+        lessons: [
+          "מורשת",
+          "מתמטיקה",
+          "אנגלית",
+          "חנ״ג 🏃‍♂️ (נעלי ספורט)",
+          "תורה"
+        ],
+        activities: [
+          { time: "16:00", title: "מפגש מחוננים", sub: "השבוע", type: "gifted" },
+          { time: "17:00", title: "צופים ברייספלד ⚜️⛺", sub: "משלישי הבא", type: "scouts" }
+        ]
+      },
+      {
+        dayName: "יום רביעי",
+        endTime: "13:30",
+        lessons: [
+          "מתמטיקה",
+          "כישורי שפה",
+          "כישורי שפה",
+          "מדעים",
+          "תלון/משחקי חשיבה",
+          "מולדת"
+        ],
+        activities: [
+          { time: "15:00", title: "כדורסל 🏀", sub: "", type: "basketball" }
+        ]
+      },
+      {
+        dayName: "יום חמישי",
+        endTime: "12:45",
+        lessons: [
+          "מתמטיקה",
+          "מתמטיקה",
+          "תורה, חברתי",
+          "מדעים",
+          "אנגלית"
+        ],
+        activities: [
+          { time: "14:30", title: "תכנית מצטיינים 🎓", sub: "ביה״ס יהל״ם (מ-8/10)", type: "yahalom" }
+        ]
+      },
+      {
+        dayName: "יום שישי",
+        endTime: "11:45",
+        lessons: [
+          "מדעים",
+          "כישורי שפה",
+          "כישורי שפה",
+          "חנ״ג 🏃‍♂️ (נעלי ספורט)"
+        ],
+        activities: [
+          { time: "16:00", title: "צופים בשבט ⚜️⛺", sub: "", type: "scouts" }
+        ]
       }
+    ];
+
+    let currentSelectedDay = 0;
+
+    // Detect today's day of week (0 = Sunday, 1 = Monday, ... 5 = Friday, 6 = Saturday)
+    function getTodayIndex() {
+      const day = new Date().getDay();
+      return (day >= 0 && day <= 5) ? day : 0; // if Saturday, show Sunday
     }
+
+    function renderDay(index) {
+      currentSelectedDay = index;
+      const data = daysData[index];
+      const container = document.getElementById('singleDayCard');
+
+      // Update tabs
+      document.querySelectorAll('.day-tab').forEach((tab, i) => {
+        tab.classList.toggle('active', i === index);
+      });
+
+      // Lessons HTML
+      const lessonsHtml = data.lessons.map((lesson, idx) => `
+        <div class="lesson-item">
+          <div class="lesson-num">${idx + 1}</div>
+          <div class="lesson-name">${lesson}</div>
+        </div>
+      `).join('');
+
+      // Activities HTML
+      let actsHtml = '';
+      if (data.activities.length > 0) {
+        actsHtml = data.activities.map(act => `
+          <div class="mobile-act-card ${act.type}">
+            <div class="mobile-act-time">${act.time}</div>
+            <div>
+              <div class="mobile-act-title">${act.title}</div>
+              ${act.sub ? `<div class="mobile-act-sub">${act.sub}</div>` : ''}
+            </div>
+          </div>
+        `).join('');
+      } else {
+        actsHtml = `<div class="no-activities">אין חוגים קבועים ביום זה 🎉</div>`;
+      }
+
+      container.innerHTML = `
+        <div class="card-header">
+          <div class="day-name">${data.dayName}</div>
+          <div class="day-end-badge">🔔 סיום: ${data.endTime}</div>
+        </div>
+        <div class="section-title">שיעורי בית ספר</div>
+        <div class="lessons-list">
+          ${lessonsHtml}
+        </div>
+        <div class="afternoon-section">
+          <div class="section-title" style="padding:0 0 8px 0;">פעילויות וחוגים אחה״צ</div>
+          ${actsHtml}
+        </div>
+      `;
+    }
+
+    function switchDay(index) {
+      renderDay(index);
+    }
+
+    // Toggle full table on mobile
+    function toggleFullTableView() {
+      document.body.classList.toggle('show-full-table');
+      const isFull = document.body.classList.contains('show-full-table');
+      document.getElementById('toggleText').innerText = isFull ? 'תצוגה יומית' : 'טבלה מלאה';
+    }
+
+    // Initialize on load
+    window.addEventListener('DOMContentLoaded', () => {
+      const today = getTodayIndex();
+      // mark today's dot
+      const tabs = document.querySelectorAll('.day-tab');
+      if (tabs[today]) {
+        tabs[today].classList.add('today');
+      }
+      renderDay(today);
+    });
   </script>
 </body>
 </html>
