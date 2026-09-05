@@ -28,6 +28,9 @@
       --yahalom-bg: #eff6ff;
       --yahalom-border: #3b82f6;
       --yahalom-text: #1e40af;
+      --uniform-bg: #fffbeb;
+      --uniform-border: #f59e0b;
+      --uniform-text: #92400e;
     }
 
     * {
@@ -87,6 +90,7 @@
       align-items: center;
       gap: 5px;
       transition: all 0.2s;
+      font-family: inherit;
     }
 
     .btn-primary {
@@ -172,6 +176,14 @@
       height: 38px;
     }
 
+    .header-row th .uniform-dot {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--uniform-text);
+      margin-top: 1px;
+    }
+
     .lesson-cell {
       background: #fff;
       font-weight: 500;
@@ -215,9 +227,20 @@
       font-size: 0.76rem;
       font-weight: 600;
       line-height: 1.3;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    }
+
+    .compact-act .act-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.25;
+      min-width: 0;
+    }
+
+    .compact-act .act-note {
+      font-size: 0.62rem;
+      font-weight: 600;
+      opacity: 0.8;
     }
 
     .compact-act.basketball { background: var(--basketball-bg); border-color: var(--basketball-border); color: var(--basketball-text); }
@@ -232,7 +255,35 @@
       padding: 1px 5px;
       border-radius: 10px;
       background: rgba(0,0,0,0.06);
+      flex-shrink: 0;
     }
+
+    /* Legend / uniform footer strip */
+    .legend-bar {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 6px 20px;
+      padding: 9px 14px;
+      border: 1.5px dashed #cbd5e1;
+      border-radius: 10px;
+      background: #fcfdff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-item .legend-icon { font-size: 1rem; }
+
+    .legend-item.uniform { color: var(--uniform-text); }
 
     /* =========================================
        MOBILE APP VIEW (Hidden on desktop)
@@ -266,6 +317,7 @@
       cursor: pointer;
       transition: all 0.15s ease;
       font-family: inherit;
+      position: relative;
     }
 
     .day-tab.active {
@@ -275,9 +327,14 @@
       font-weight: 700;
     }
 
-    .day-tab.today {
-      position: relative;
+    .day-tab .tab-uniform {
+      position: absolute;
+      top: 1px;
+      left: 4px;
+      font-size: 0.6rem;
+      line-height: 1;
     }
+
     .day-tab.today::after {
       content: '';
       position: absolute;
@@ -321,6 +378,23 @@
       font-weight: 600;
       backdrop-filter: blur(4px);
     }
+
+    /* Uniform banner (mobile) */
+    .uniform-banner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 16px 0 16px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: var(--uniform-bg);
+      border: 1px solid var(--uniform-border);
+      color: var(--uniform-text);
+    }
+
+    .uniform-banner .uniform-icon { font-size: 1.15rem; flex-shrink: 0; }
+    .uniform-banner .uniform-label { font-size: 0.92rem; font-weight: 800; line-height: 1.3; }
+    .uniform-banner .uniform-note { font-size: 0.75rem; font-weight: 500; opacity: 0.85; }
 
     .section-title {
       font-size: 0.78rem;
@@ -420,13 +494,6 @@
       padding: 8px 0;
     }
 
-    /* All-days list for mobile */
-    .all-days-container {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
     /* Media Queries */
     @media screen and (max-width: 768px) {
       .desktop-view {
@@ -464,15 +531,20 @@
        ========================================= */
     @page {
       size: A4 landscape;
-      margin: 6mm;
+      margin: 8mm;
     }
 
     @media print {
+      *, *::before, *::after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
       body {
         background: #ffffff !important;
         color: #000000 !important;
         margin: 0 !important;
         padding: 0 !important;
+        display: block !important;
       }
       .top-bar, .mobile-view {
         display: none !important;
@@ -488,9 +560,41 @@
         box-shadow: none !important;
         padding: 0 !important;
       }
-      .schedule-title { font-size: 1.5rem; }
+      .table-wrapper { overflow: visible !important; }
+
+      .schedule-header { margin-bottom: 10px; }
+      .schedule-title { font-size: 1.55rem; }
+      .schedule-subtitle { font-size: 0.8rem; }
+
+      .schedule-table {
+        font-size: 0.95rem;
+        page-break-inside: avoid;
+      }
       .schedule-table th, .schedule-table td {
         border-color: #000 !important;
+        height: var(--print-row-h, 42px);
+        padding: 5px 4px;
+      }
+      .header-row th { height: calc(var(--print-row-h, 42px) + 4px); font-size: 1rem; }
+      .header-row th .uniform-dot { font-size: 0.7rem; }
+      .end-row td { height: calc(var(--print-row-h, 42px) * 0.8); font-size: 0.9rem; }
+      .period-hour { font-size: 0.8rem; }
+
+      .compact-act {
+        font-size: 0.86rem;
+        padding: 4px 8px;
+        gap: 6px;
+      }
+      .compact-act .act-note { font-size: 0.68rem; }
+      .time-pill { font-size: 0.72rem; padding: 1px 6px; }
+
+      .legend-bar {
+        margin-top: 12px;
+        font-size: 0.85rem;
+        padding: 10px 14px;
+        border-color: #64748b !important;
+        background: #ffffff !important;
+        page-break-inside: avoid;
       }
     }
   </style>
@@ -517,15 +621,8 @@
        MOBILE APP VIEW (TABS + DAY CARDS)
        ==================================================== -->
   <main class="mobile-view" id="mobileAppView">
-    <!-- Day Tabs -->
-    <nav class="day-selector" aria-label="בחירת יום">
-      <button class="day-tab" data-day="0" onclick="switchDay(0)">א׳</button>
-      <button class="day-tab" data-day="1" onclick="switchDay(1)">ב׳</button>
-      <button class="day-tab" data-day="2" onclick="switchDay(2)">ג׳</button>
-      <button class="day-tab" data-day="3" onclick="switchDay(3)">ד׳</button>
-      <button class="day-tab" data-day="4" onclick="switchDay(4)">ה׳</button>
-      <button class="day-tab" data-day="5" onclick="switchDay(5)">ו׳</button>
-    </nav>
+    <!-- Day Tabs (rendered by JS) -->
+    <nav class="day-selector" id="daySelector" aria-label="בחירת יום"></nav>
 
     <!-- Dynamic Day Container -->
     <section id="singleDayCard" class="mobile-day-card">
@@ -540,365 +637,357 @@
     <div class="page-container">
       <div class="schedule-header">
         <h1 class="schedule-title">מערכת שעות שבועית</h1>
-        <p class="schedule-subtitle">שנת הלימודים תשפ״ו • כיתה ד׳</p>
+        <p class="schedule-subtitle">שנת הלימודים תשפ״ו • כיתה ד׳ <span id="printDateNote"></span></p>
       </div>
 
       <div class="table-wrapper">
         <table class="schedule-table">
           <thead>
-            <tr class="header-row">
-              <th class="col-period">#</th>
-              <th class="col-day">יום ראשון</th>
-              <th class="col-day">יום שני</th>
-              <th class="col-day">יום שלישי</th>
-              <th class="col-day">יום רביעי</th>
-              <th class="col-day">יום חמישי</th>
-              <th class="col-day">יום שישי</th>
-            </tr>
+            <tr class="header-row" id="tableHead"></tr>
           </thead>
-          <tbody>
-            <!-- Period 1 -->
-            <tr>
-              <td class="col-period">1</td>
-              <td class="lesson-cell">כישורי חיים</td>
-              <td class="lesson-cell">ספר זה כל הסיפור</td>
-              <td class="lesson-cell">מורשת</td>
-              <td class="lesson-cell">מתמטיקה</td>
-              <td class="lesson-cell">מתמטיקה</td>
-              <td class="lesson-cell">מדעים</td>
-            </tr>
-
-            <!-- Period 2 -->
-            <tr>
-              <td class="col-period">2</td>
-              <td class="lesson-cell">מתמטיקה</td>
-              <td class="lesson-cell">כישורי שפה</td>
-              <td class="lesson-cell">מתמטיקה</td>
-              <td class="lesson-cell">כישורי שפה</td>
-              <td class="lesson-cell">מתמטיקה</td>
-              <td class="lesson-cell">כישורי שפה</td>
-            </tr>
-
-            <!-- Period 3 -->
-            <tr>
-              <td class="col-period">3</td>
-              <td class="lesson-cell">אומנות</td>
-              <td class="lesson-cell">כישורי שפה</td>
-              <td class="lesson-cell">אנגלית</td>
-              <td class="lesson-cell">כישורי שפה</td>
-              <td class="lesson-cell">תורה, חברתי</td>
-              <td class="lesson-cell">כישורי שפה</td>
-            </tr>
-
-            <!-- Period 4 -->
-            <tr>
-              <td class="col-period">4</td>
-              <td class="lesson-cell">אומנות</td>
-              <td class="lesson-cell">מגלים עולמות-שכבתי</td>
-              <td class="lesson-cell">חנ״ג 🏃‍♂️</td>
-              <td class="lesson-cell">מדעים</td>
-              <td class="lesson-cell">מדעים</td>
-              <td class="lesson-cell">חנ״ג 🏃‍♂️</td>
-            </tr>
-
-            <!-- Period 5 -->
-            <tr>
-              <td class="col-period">5</td>
-              <td class="lesson-cell">אנגלית</td>
-              <td class="lesson-cell">אנגלית</td>
-              <td class="lesson-cell">תורה</td>
-              <td class="lesson-cell">תלון/משחקי חשיבה</td>
-              <td class="lesson-cell">אנגלית</td>
-              <td class="empty-cell">—</td>
-            </tr>
-
-            <!-- Period 6 -->
-            <tr>
-              <td class="col-period">6</td>
-              <td class="lesson-cell">כישורי שפה</td>
-              <td class="lesson-cell">מפתח הלב</td>
-              <td class="empty-cell">—</td>
-              <td class="lesson-cell">מולדת</td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-            </tr>
-
-            <!-- School End Row -->
-            <tr class="end-row">
-              <td class="period-hour">סיום</td>
-              <td>13:30</td>
-              <td>13:30</td>
-              <td>12:45</td>
-              <td>13:30</td>
-              <td>12:45</td>
-              <td>11:45</td>
-            </tr>
-
-            <!-- Afternoon: 14:30 -->
-            <tr>
-              <td class="period-hour">14:30</td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="act-cell">
-                <div class="compact-act yahalom">
-                  <span class="time-pill">14:30</span>
-                  <span>תכנית מצטיינים (יהל״ם)</span>
-                </div>
-              </td>
-              <td class="empty-cell">—</td>
-            </tr>
-
-            <!-- Afternoon: 15:00 -->
-            <tr>
-              <td class="period-hour">15:00</td>
-              <td class="act-cell">
-                <div class="compact-act basketball">
-                  <span class="time-pill">15:00</span>
-                  <span>כדורסל 🏀</span>
-                </div>
-              </td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="act-cell">
-                <div class="compact-act basketball">
-                  <span class="time-pill">15:00</span>
-                  <span>כדורסל 🏀</span>
-                </div>
-              </td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-            </tr>
-
-            <!-- Afternoon: 16:00 -->
-            <tr>
-              <td class="period-hour">16:00</td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="act-cell">
-                <div class="compact-act gifted">
-                  <span class="time-pill">16:00</span>
-                  <span>מפגש מחוננים</span>
-                </div>
-              </td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="act-cell">
-                <div class="compact-act scouts">
-                  <span class="time-pill">16:00</span>
-                  <span>צופים בשבט ⚜️⛺</span>
-                </div>
-              </td>
-            </tr>
-
-            <!-- Afternoon: 17:00 -->
-            <tr>
-              <td class="period-hour">17:00</td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="act-cell">
-                <div class="compact-act scouts">
-                  <span class="time-pill">17:00</span>
-                  <span>צופים ברייספלד ⚜️⛺</span>
-                </div>
-              </td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-            </tr>
-
-            <!-- Afternoon: 18:00 -->
-            <tr>
-              <td class="period-hour">18:00</td>
-              <td class="act-cell">
-                <div class="compact-act einat">
-                  <span class="time-pill">18:00</span>
-                  <span>מפגש עם עינת</span>
-                </div>
-              </td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-              <td class="empty-cell">—</td>
-            </tr>
-          </tbody>
+          <tbody id="tableBody"></tbody>
         </table>
       </div>
+
+      <!-- Uniform / activities legend strip -->
+      <div class="legend-bar" id="legendBar"></div>
     </div>
   </main>
 
   <script>
-    // Data definition for mobile view
-    const daysData = [
-      {
-        dayName: "יום ראשון",
-        endTime: "13:30",
-        lessons: [
-          "כישורי חיים",
-          "מתמטיקה",
-          "אומנות",
-          "אומנות",
-          "אנגלית",
-          "כישורי שפה"
-        ],
-        activities: [
-          { time: "15:00", title: "כדורסל 🏀", sub: "", type: "basketball" },
-          { time: "18:00", title: "מפגש עם עינת", sub: "", type: "einat" }
-        ]
-      },
-      {
-        dayName: "יום שני",
-        endTime: "13:30",
-        lessons: [
-          "ספר זה כל הסיפור",
-          "כישורי שפה",
-          "כישורי שפה",
-          "מגלים עולמות-שכבתי",
-          "אנגלית",
-          "מפתח הלב"
-        ],
-        activities: []
-      },
-      {
-        dayName: "יום שלישי",
-        endTime: "12:45",
-        lessons: [
-          "מורשת",
-          "מתמטיקה",
-          "אנגלית",
-          "חנ״ג 🏃‍♂️ (נעלי ספורט)",
-          "תורה"
-        ],
-        activities: [
-          { time: "16:00", title: "מפגש מחוננים", sub: "השבוע", type: "gifted" },
-          { time: "17:00", title: "צופים ברייספלד ⚜️⛺", sub: "משלישי הבא", type: "scouts" }
-        ]
-      },
-      {
-        dayName: "יום רביעי",
-        endTime: "13:30",
-        lessons: [
-          "מתמטיקה",
-          "כישורי שפה",
-          "כישורי שפה",
-          "מדעים",
-          "תלון/משחקי חשיבה",
-          "מולדת"
-        ],
-        activities: [
-          { time: "15:00", title: "כדורסל 🏀", sub: "", type: "basketball" }
-        ]
-      },
-      {
-        dayName: "יום חמישי",
-        endTime: "12:45",
-        lessons: [
-          "מתמטיקה",
-          "מתמטיקה",
-          "תורה, חברתי",
-          "מדעים",
-          "אנגלית"
-        ],
-        activities: [
-          { time: "14:30", title: "תכנית מצטיינים 🎓", sub: "ביה״ס יהל״ם (מ-8/10)", type: "yahalom" }
-        ]
-      },
-      {
-        dayName: "יום שישי",
-        endTime: "11:45",
-        lessons: [
-          "מדעים",
-          "כישורי שפה",
-          "כישורי שפה",
-          "חנ״ג 🏃‍♂️ (נעלי ספורט)"
-        ],
-        activities: [
-          { time: "16:00", title: "צופים בשבט ⚜️⛺", sub: "", type: "scouts" }
-        ]
-      }
-    ];
+  /* =========================================================
+     מקור אמת יחיד: כל התצוגות (טבלה, הדפסה, מובייל) נבנות מכאן
+     ========================================================= */
 
-    let currentSelectedDay = 0;
+  const TODAY = new Date();
 
-    // Detect today's day of week (0 = Sunday, 1 = Monday, ... 5 = Friday, 6 = Saturday)
-    function getTodayIndex() {
-      const day = new Date().getDay();
-      return (day >= 0 && day <= 5) ? day : 0; // if Saturday, show Sunday
+  // סוגי תלבושת
+  const UNIFORMS = {
+    sport: { icon: "👟", label: "תלבושת ספורט", note: "שיעור חנ״ג" }
+  };
+
+  const DAYS = [
+    {
+      name: "יום ראשון", short: "א׳", tab: "א׳", end: "13:30", uniform: null,
+      lessons: ["כישורי חיים", "מתמטיקה", "אומנות", "אומנות", "אנגלית", "כישורי שפה"],
+      activities: [
+        { time: "15:00", title: "כדורסל 🏀", type: "basketball" },
+        { time: "18:00", title: "מפגש עם עינת", type: "einat" }
+      ]
+    },
+    {
+      name: "יום שני", short: "ב׳", tab: "ב׳", end: "13:30", uniform: null,
+      lessons: ["ספר זה כל הסיפור", "כישורי שפה", "כישורי שפה", "מגלים עולמות-שכבתי", "אנגלית", "מפתח הלב"],
+      activities: []
+    },
+    {
+      name: "יום שלישי", short: "ג׳", tab: "ג׳", end: "12:45", uniform: "sport",
+      lessons: ["מורשת", "מתמטיקה", "אנגלית", "חנ״ג 🏃‍♂️", "תורה"],
+      activities: [
+        // מפגש מחוננים – רק עד 9.9
+        { time: "16:00", title: "מפגש מחוננים", type: "gifted", until: "09-09" },
+        // צופים – מתחיל ב-11.9
+        { time: "17:00", title: "צופים ברייספלד ⚜️⛺", legendLabel: "רייספלד", type: "scouts", from: "09-11" }
+      ]
+    },
+    {
+      name: "יום רביעי", short: "ד׳", tab: "ד׳", end: "13:30", uniform: null,
+      lessons: ["מתמטיקה", "כישורי שפה", "כישורי שפה", "מדעים", "תלון/משחקי חשיבה", "מולדת"],
+      activities: [
+        { time: "15:00", title: "כדורסל 🏀", type: "basketball" }
+      ]
+    },
+    {
+      name: "יום חמישי", short: "ה׳", tab: "ה׳", end: "12:45", uniform: null,
+      lessons: ["מתמטיקה", "מתמטיקה", "תורה, חברתי", "מדעים", "אנגלית"],
+      activities: [
+        // תכנית מצטיינים – מתחילה 8.10, מוצגת החל מ-2.10
+        { time: "14:30", title: "תכנית מצטיינים 🎓", tableTitle: "מצטיינים (יהל״ם)",
+          sub: "ביה״ס יהל״ם", type: "yahalom", from: "10-02", startsOn: "10-08" }
+      ]
+    },
+    {
+      name: "יום שישי", short: "ו׳", tab: "ו׳", end: "11:45", uniform: "sport",
+      lessons: ["מדעים", "כישורי שפה", "כישורי שפה", "חנ״ג 🏃‍♂️"],
+      activities: [
+        // צופים – מתחיל ב-11.9
+        { time: "16:00", title: "צופים בשבט ⚜️⛺", legendLabel: "בשבט", type: "scouts", from: "09-11" }
+      ]
     }
+  ];
 
-    function renderDay(index) {
-      currentSelectedDay = index;
-      const data = daysData[index];
-      const container = document.getElementById('singleDayCard');
+  // אילו חוגים מקבלים שורה בפס התחתון (מלבד התלבושת)
+  const LEGEND_TYPES = [
+    { type: "basketball", icon: "🏀", label: "כדורסל" },
+    { type: "scouts",     icon: "⚜️", label: "צופים" }
+  ];
 
-      // Update tabs
-      document.querySelectorAll('.day-tab').forEach((tab, i) => {
-        tab.classList.toggle('active', i === index);
-      });
+  /* ---------- עזרי תאריכים ----------
+     תאריכים נכתבים כ-"MM-DD" ונפתרים לשנת הלימודים הנוכחית,
+     כך שהקובץ ממשיך לעבוד גם בשנה הבאה בלי לגעת בקוד. */
 
-      // Lessons HTML
-      const lessonsHtml = data.lessons.map((lesson, idx) => `
-        <div class="lesson-item">
-          <div class="lesson-num">${idx + 1}</div>
-          <div class="lesson-name">${lesson}</div>
-        </div>
-      `).join('');
+  function schoolYearStart(d) {
+    return d.getMonth() >= 7 ? d.getFullYear() : d.getFullYear() - 1; // אוגוסט ואילך = תחילת שנה
+  }
 
-      // Activities HTML
-      let actsHtml = '';
-      if (data.activities.length > 0) {
-        actsHtml = data.activities.map(act => `
-          <div class="mobile-act-card ${act.type}">
-            <div class="mobile-act-time">${act.time}</div>
-            <div>
-              <div class="mobile-act-title">${act.title}</div>
-              ${act.sub ? `<div class="mobile-act-sub">${act.sub}</div>` : ''}
-            </div>
-          </div>
-        `).join('');
-      } else {
-        actsHtml = `<div class="no-activities">אין חוגים קבועים ביום זה 🎉</div>`;
-      }
+  function resolveDate(mmdd) {
+    const [m, day] = mmdd.split('-').map(Number);
+    const startY = schoolYearStart(TODAY);
+    const year = (m >= 8) ? startY : startY + 1;
+    return new Date(year, m - 1, day);
+  }
 
-      container.innerHTML = `
-        <div class="card-header">
-          <div class="day-name">${data.dayName}</div>
-          <div class="day-end-badge">🔔 סיום: ${data.endTime}</div>
-        </div>
-        <div class="section-title">שיעורי בית ספר</div>
-        <div class="lessons-list">
-          ${lessonsHtml}
-        </div>
-        <div class="afternoon-section">
-          <div class="section-title" style="padding:0 0 8px 0;">פעילויות וחוגים אחה״צ</div>
-          ${actsHtml}
-        </div>
-      `;
+  function fmtDate(mmdd) {
+    const d = resolveDate(mmdd);
+    return d.getDate() + '.' + (d.getMonth() + 1);
+  }
+
+  function startOfDay(d) {
+    return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  }
+
+  function isVisible(act) {
+    const today = startOfDay(TODAY);
+    if (act.from && today < resolveDate(act.from)) return false;
+    if (act.until && today > resolveDate(act.until)) return false;
+    return true;
+  }
+
+  function visibleActs(day) {
+    return day.activities.filter(isVisible);
+  }
+
+  /* הערה מוצגת לפעילות. תאריכי from/until הם לוגיקה בלבד – הם קובעים אם
+     הפעילות מוצגת, ולא מוצגים כטקסט. היוצא מן הכלל: startsOn, כשהפעילות
+     מופיעה בלוח עוד לפני המפגש הראשון בפועל. */
+  function actNote(act) {
+    const parts = [];
+    if (act.sub) parts.push(act.sub);
+    if (act.startsOn && startOfDay(TODAY) < resolveDate(act.startsOn)) {
+      parts.push('מתחיל ב-' + fmtDate(act.startsOn));
     }
+    return parts.join(' • ');
+  }
 
-    function switchDay(index) {
-      renderDay(index);
-    }
+  /* ---------- תצוגת טבלה (דסקטופ + הדפסה) ---------- */
 
-    // Toggle full table on mobile
-    function toggleFullTableView() {
-      document.body.classList.toggle('show-full-table');
-      const isFull = document.body.classList.contains('show-full-table');
-      document.getElementById('toggleText').innerText = isFull ? 'תצוגה יומית' : 'טבלה מלאה';
-    }
-
-    // Initialize on load
-    window.addEventListener('DOMContentLoaded', () => {
-      const today = getTodayIndex();
-      // mark today's dot
-      const tabs = document.querySelectorAll('.day-tab');
-      if (tabs[today]) {
-        tabs[today].classList.add('today');
-      }
-      renderDay(today);
+  function buildTableHead() {
+    let html = '<th class="col-period">#</th>';
+    DAYS.forEach(day => {
+      const u = day.uniform ? UNIFORMS[day.uniform] : null;
+      html += '<th class="col-day">' + day.name +
+        (u ? '<span class="uniform-dot">' + u.icon + ' ' + u.label + '</span>' : '') +
+        '</th>';
     });
+    document.getElementById('tableHead').innerHTML = html;
+  }
+
+  function chipHtml(act, forTable) {
+    const title = forTable ? (act.tableTitle || act.title) : act.title;
+    const note = forTable && act.startsOn && startOfDay(TODAY) < resolveDate(act.startsOn)
+                   ? 'מתחיל ב-' + fmtDate(act.startsOn)
+                   : '';
+    return '<div class="compact-act ' + act.type + '">' +
+             '<span class="time-pill">' + act.time + '</span>' +
+             '<span class="act-label"><span>' + title + '</span>' +
+             (note ? '<span class="act-note">' + note + '</span>' : '') +
+             '</span></div>';
+  }
+
+  function buildTableBody() {
+    const maxLessons = Math.max.apply(null, DAYS.map(d => d.lessons.length));
+    let html = '';
+
+    // שיעורי בוקר
+    for (let i = 0; i < maxLessons; i++) {
+      html += '<tr><td class="col-period">' + (i + 1) + '</td>';
+      DAYS.forEach(day => {
+        const lesson = day.lessons[i];
+        html += lesson
+          ? '<td class="lesson-cell">' + lesson + '</td>'
+          : '<td class="empty-cell">—</td>';
+      });
+      html += '</tr>';
+    }
+
+    // שעת סיום
+    html += '<tr class="end-row"><td class="period-hour">סיום</td>' +
+            DAYS.map(d => '<td>' + d.end + '</td>').join('') + '</tr>';
+
+    // אחה״צ – רק שעות שבהן באמת יש פעילות פעילה השבוע (חוסך שורות ריקות בהדפסה)
+    const times = [];
+    DAYS.forEach(day => visibleActs(day).forEach(act => {
+      if (times.indexOf(act.time) === -1) times.push(act.time);
+    }));
+    times.sort();
+
+    times.forEach(time => {
+      html += '<tr><td class="period-hour">' + time + '</td>';
+      DAYS.forEach(day => {
+        const acts = visibleActs(day).filter(a => a.time === time);
+        html += acts.length
+          ? '<td class="act-cell">' + acts.map(a => chipHtml(a, true)).join('') + '</td>'
+          : '<td class="empty-cell">—</td>';
+      });
+      html += '</tr>';
+    });
+
+    document.getElementById('tableBody').innerHTML = html;
+  }
+
+  /* ---------- פס תחתון: תלבושת + חוגים ---------- */
+
+  function joinHe(items) {
+    if (items.length <= 1) return items.join('');
+    return items.slice(0, -1).join(', ') + ' ו' + items[items.length - 1];
+  }
+
+  function buildLegend() {
+    const parts = [];
+
+    // שורת התלבושת
+    Object.keys(UNIFORMS).forEach(key => {
+      const days = DAYS.filter(d => d.uniform === key).map(d => d.name.replace('יום ', ''));
+      if (!days.length) return;
+      const u = UNIFORMS[key];
+      parts.push('<span class="legend-item uniform"><span class="legend-icon">' + u.icon + '</span>' +
+                 u.label + ': ימים ' + joinHe(days) + ' (חנ״ג)</span>');
+    });
+
+    // שורות החוגים
+    LEGEND_TYPES.forEach(entry => {
+      const bits = [];
+      DAYS.forEach(day => visibleActs(day).forEach(act => {
+        if (act.type !== entry.type) return;
+        bits.push('יום ' + day.short + ' ב-' + act.time +
+                  (act.legendLabel ? ' (' + act.legendLabel + ')' : ''));
+      }));
+      if (!bits.length) return;
+      parts.push('<span class="legend-item"><span class="legend-icon">' + entry.icon + '</span>' +
+                 entry.label + ': ' + bits.join(' | ') + '</span>');
+    });
+
+    document.getElementById('legendBar').innerHTML = parts.join('');
+  }
+
+  /* ---------- תצוגת מובייל ---------- */
+
+  let currentSelectedDay = 0;
+
+  function getTodayIndex() {
+    const day = new Date().getDay();
+    return (day >= 0 && day <= 5) ? day : 0; // שבת -> ראשון
+  }
+
+  function buildTabs() {
+    const nav = document.getElementById('daySelector');
+    nav.innerHTML = DAYS.map((day, i) => {
+      const u = day.uniform ? UNIFORMS[day.uniform] : null;
+      return '<button class="day-tab" data-day="' + i + '" onclick="switchDay(' + i + ')">' +
+             day.tab + (u ? '<span class="tab-uniform">' + u.icon + '</span>' : '') +
+             '</button>';
+    }).join('');
+  }
+
+  function renderDay(index) {
+    currentSelectedDay = index;
+    const data = DAYS[index];
+    const container = document.getElementById('singleDayCard');
+
+    document.querySelectorAll('.day-tab').forEach((tab, i) => {
+      tab.classList.toggle('active', i === index);
+    });
+
+    const lessonsHtml = data.lessons.map((lesson, idx) => `
+      <div class="lesson-item">
+        <div class="lesson-num">${idx + 1}</div>
+        <div class="lesson-name">${lesson}</div>
+      </div>
+    `).join('');
+
+    // תלבושת – רק בימים שצריך
+    const u = data.uniform ? UNIFORMS[data.uniform] : null;
+    const uniformHtml = u ? `
+      <div class="uniform-banner">
+        <div class="uniform-icon">${u.icon}</div>
+        <div>
+          <div class="uniform-label">${u.label}</div>
+          <div class="uniform-note">${u.note}</div>
+        </div>
+      </div>
+    ` : '';
+
+    const acts = visibleActs(data);
+    let actsHtml;
+    if (acts.length) {
+      actsHtml = acts.map(act => {
+        const note = actNote(act);
+        return `
+        <div class="mobile-act-card ${act.type}">
+          <div class="mobile-act-time">${act.time}</div>
+          <div>
+            <div class="mobile-act-title">${act.title}</div>
+            ${note ? `<div class="mobile-act-sub">${note}</div>` : ''}
+          </div>
+        </div>`;
+      }).join('');
+    } else {
+      actsHtml = `<div class="no-activities">אין חוגים קבועים ביום זה 🎉</div>`;
+    }
+
+    container.innerHTML = `
+      <div class="card-header">
+        <div class="day-name">${data.name}</div>
+        <div class="day-end-badge">🔔 סיום: ${data.end}</div>
+      </div>
+      ${uniformHtml}
+      <div class="section-title">שיעורי בית ספר</div>
+      <div class="lessons-list">
+        ${lessonsHtml}
+      </div>
+      <div class="afternoon-section">
+        <div class="section-title" style="padding:0 0 8px 0;">פעילויות וחוגים אחה״צ</div>
+        ${actsHtml}
+      </div>
+    `;
+  }
+
+  function switchDay(index) {
+    renderDay(index);
+  }
+
+  function toggleFullTableView() {
+    document.body.classList.toggle('show-full-table');
+    const isFull = document.body.classList.contains('show-full-table');
+    document.getElementById('toggleText').innerText = isFull ? 'תצוגה יומית' : 'טבלה מלאה';
+  }
+
+  /* גובה שורה להדפסה – מתאים את עצמו למספר השורות שנשארו אחרי סינון התאריכים,
+     כדי שהטבלה תמלא עמוד A4 לרוחב אחד בלי להיות צפופה ובלי לגלוש לעמוד שני. */
+  function fitPrintRows() {
+    const bodyRows = document.querySelectorAll('#tableBody tr').length;
+    const AVAILABLE = 560;              // הגובה הפנוי בעמוד אחרי הכותרת והפס התחתון (עם מרווח ביטחון)
+    const UNITS = bodyRows + 0.8;       // שורת הסיום נמוכה יותר (0.8), הכותרת מוסיפה 4px
+    const h = Math.max(34, Math.min(58, Math.floor((AVAILABLE - 4) / UNITS)));
+    document.documentElement.style.setProperty('--print-row-h', h + 'px');
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    buildTableHead();
+    buildTableBody();
+    buildLegend();
+    buildTabs();
+
+    fitPrintRows();
+
+    document.getElementById('printDateNote').innerText =
+      '• נכון ל-' + TODAY.getDate() + '.' + (TODAY.getMonth() + 1) + '.' + TODAY.getFullYear();
+
+    const today = getTodayIndex();
+    const tabs = document.querySelectorAll('.day-tab');
+    if (tabs[today]) tabs[today].classList.add('today');
+    renderDay(today);
+  });
   </script>
 </body>
 </html>
