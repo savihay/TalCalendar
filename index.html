@@ -975,7 +975,20 @@
     return new Date(d.getFullYear(), d.getMonth(), d.getDate() + offset);
   }
 
-  const WEEK_START = weekStartSunday(TODAY);
+  /* אחרי 19:00 היום נחשב גמור ומציגים את היום שאחריו.
+     זה מזיז גם את השבוע המוצג בערב שישי – אחרת "יום ראשון" שהיה מוצג
+     היה של השבוע שכבר נגמר, עם התאריך שלו. */
+  const DAY_ENDS_AT_HOUR = 19;
+
+  function viewDate(now) {
+    const d = startOfDay(now);
+    return now.getHours() >= DAY_ENDS_AT_HOUR
+      ? new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1)
+      : d;
+  }
+
+  const VIEW_DATE = viewDate(TODAY);
+  const WEEK_START = weekStartSunday(VIEW_DATE);
 
   function dateOfDay(index) {
     return new Date(WEEK_START.getFullYear(), WEEK_START.getMonth(), WEEK_START.getDate() + index);
@@ -1207,9 +1220,19 @@
 
   let currentSelectedDay = 0;
 
+  // היום שמוצג כברירת מחדל: היום הנוכחי, ואחרי 19:00 – היום שאחריו
   function getTodayIndex() {
-    const day = new Date().getDay();
-    return (day >= 0 && day <= 5) ? day : 0; // שבת -> ראשון
+    const day = VIEW_DATE.getDay();
+    return day === 6 ? 0 : day;   // שבת -> ראשון (של השבוע שכבר מוצג)
+  }
+
+  // האינדקס של היום האמיתי בשבוע המוצג (-1 אם הוא לא בתוכו) – בשביל הנקודה בלשונית
+  function realTodayIndex() {
+    const t = startOfDay(TODAY).getTime();
+    for (let i = 0; i < DAYS.length; i++) {
+      if (dateOfDay(i).getTime() === t) return i;
+    }
+    return -1;
   }
 
   function buildTabs() {
@@ -1349,10 +1372,10 @@
       '• שבוע ' + shortDate(dateOfDay(0)) + ' – ' + shortDate(dateOfDay(5)) +
       '.' + dateOfDay(5).getFullYear();
 
-    const today = getTodayIndex();
     const tabs = document.querySelectorAll('.day-tab');
-    if (tabs[today]) tabs[today].classList.add('today');
-    renderDay(today);
+    const realToday = realTodayIndex();
+    if (realToday >= 0 && tabs[realToday]) tabs[realToday].classList.add('today');
+    renderDay(getTodayIndex());
   });
   </script>
 </body>
