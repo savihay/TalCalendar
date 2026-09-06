@@ -929,6 +929,18 @@
     { type: "scouts",     icon: "⚜️", label: "צופים" }
   ];
 
+  /* שינויים חד-פעמיים לשבוע מסוים – לא נוגעים במערכת הקבועה.
+     weekOf = התאריך של יום ראשון באותו שבוע.
+     remove = מה לא מתקיים באותו שבוע (day = 0 לראשון ... 5 לשישי, לפי הכותרת)
+     add    = מה מתקיים רק באותו שבוע */
+  const WEEK_OVERRIDES = [
+    {
+      weekOf: "2026-09-13",
+      remove: [{ day: 0, title: "מפגש עם עינת" }],
+      add: [{ day: 1, time: "17:00", title: "מפגש עם עינת", type: "einat", sub: "השבוע בלבד" }]
+    }
+  ];
+
   /* ---------- עזרי תאריכים ----------
      תאריכים נכתבים כ-"MM-DD" ונפתרים לשנת הלימודים הנוכחית,
      כך שהקובץ ממשיך לעבוד גם בשנה הבאה בלי לגעת בקוד. */
@@ -1006,9 +1018,26 @@
                                  date <= toDate(v.end))[0];
   }
 
+  // השינוי החד-פעמי שחל על השבוע המוצג, אם יש
+  function weekOverride() {
+    return WEEK_OVERRIDES.filter(o => toDate(o.weekOf).getTime() === WEEK_START.getTime())[0];
+  }
+
   // פעילויות אחה״צ להצגה בשבוע הזה – ביום חופש אין חוגים
   function weekActs(index) {
-    return dayVacation(index) ? [] : visibleActs(DAYS[index]);
+    if (dayVacation(index)) return [];
+
+    let acts = visibleActs(DAYS[index]);
+    const ov = weekOverride();
+    if (ov) {
+      if (ov.remove) {
+        acts = acts.filter(a => !ov.remove.some(r => r.day === index && r.title === a.title));
+      }
+      if (ov.add) {
+        acts = acts.concat(ov.add.filter(a => a.day === index));
+      }
+    }
+    return acts.sort((a, b) => a.time.localeCompare(b.time));
   }
 
   /* הערה מוצגת לפעילות. תאריכי from/until הם לוגיקה בלבד – הם קובעים אם
