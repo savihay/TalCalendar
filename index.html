@@ -28,6 +28,9 @@
       --yahalom-bg: #eff6ff;
       --yahalom-border: #3b82f6;
       --yahalom-text: #1e40af;
+      --trial-bg: #ecfeff;
+      --trial-border: #06b6d4;
+      --trial-text: #0e7490;
       --uniform-bg: #fffbeb;
       --uniform-border: #f59e0b;
       --uniform-text: #92400e;
@@ -267,6 +270,7 @@
     .compact-act.gifted     { background: var(--gifted-bg); border-color: var(--gifted-border); color: var(--gifted-text); }
     .compact-act.einat      { background: var(--einat-bg); border-color: var(--einat-border); color: var(--einat-text); }
     .compact-act.yahalom    { background: var(--yahalom-bg); border-color: var(--yahalom-border); color: var(--yahalom-text); }
+    .compact-act.trial      { background: var(--trial-bg); border-color: var(--trial-border); color: var(--trial-text); }
 
     .time-pill {
       font-size: 0.65rem;
@@ -415,6 +419,30 @@
     .uniform-banner .uniform-label { font-size: 0.92rem; font-weight: 800; line-height: 1.3; }
     .uniform-banner .uniform-note { font-size: 0.75rem; font-weight: 500; opacity: 0.85; }
 
+    /* Day note banner (mobile) – תזכורות חד-פעמיות כמו "להביא תפוח" */
+    .day-note-banner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 16px 0 16px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #fffbeb;
+      border: 1px solid #fbbf24;
+      color: #92400e;
+    }
+    .day-note-banner .day-note-icon { font-size: 1.15rem; flex-shrink: 0; }
+    .day-note-banner .day-note-text { font-size: 0.88rem; font-weight: 700; line-height: 1.3; }
+
+    /* Day note chip (desktop table) – מתחת לתאריך בכותרת העמודה */
+    .day-note-chip {
+      display: block;
+      margin-top: 2px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #92400e;
+    }
+
     .section-title {
       font-size: 0.78rem;
       font-weight: 700;
@@ -483,6 +511,7 @@
     .mobile-act-card.gifted     { background: var(--gifted-bg); border-color: var(--gifted-border); color: var(--gifted-text); }
     .mobile-act-card.einat      { background: var(--einat-bg); border-color: var(--einat-border); color: var(--einat-text); }
     .mobile-act-card.yahalom    { background: var(--yahalom-bg); border-color: var(--yahalom-border); color: var(--yahalom-text); }
+    .mobile-act-card.trial      { background: var(--trial-bg); border-color: var(--trial-border); color: var(--trial-text); }
 
     .mobile-act-time {
       font-size: 0.95rem;
@@ -723,6 +752,7 @@
       }
       .header-row th { height: calc(var(--print-row-h, 42px) + 4px); font-size: 1rem; }
       .header-row th .uniform-dot { font-size: 0.7rem; }
+      .day-note-chip { font-size: 0.72rem; }
       .end-row td { height: calc(var(--print-row-h, 42px) * 0.8); font-size: 0.9rem; }
       .period-hour { font-size: 0.8rem; }
 
@@ -931,8 +961,22 @@
   /* שינויים חד-פעמיים לשבוע מסוים – לא נוגעים במערכת הקבועה.
      weekOf = התאריך של יום ראשון באותו שבוע.
      remove = מה לא מתקיים באותו שבוע (day = 0 לראשון ... 5 לשישי, לפי הכותרת)
-     add    = מה מתקיים רק באותו שבוע */
+     add    = מה מתקיים רק באותו שבוע
+     notes  = תזכורת חד-פעמית לאותו יום (בלי שעה, כמו "להביא תפוח עץ") */
   const WEEK_OVERRIDES = [
+    {
+      weekOf: "2026-09-06",
+      add: [
+        // שיעורי ניסיון לחוגים – שלישי 8.9 בלבד
+        { day: 2, time: "13:45", title: "ניסיון רובלוקס", tableTitle: "רובלוקס (ניסיון)",
+          type: "trial", sub: "כיתה ד1" },
+        { day: 2, time: "15:20", title: "ניסיון מיינקראפט", tableTitle: "מיינקראפט (ניסיון)",
+          type: "trial", sub: "כיתה ד1" }
+      ],
+      notes: [
+        { day: 3, icon: "🍎", text: "להביא תפוח עץ חתוך בכלי קטן" }
+      ]
+    },
     {
       weekOf: "2026-09-13",
       remove: [{ day: 0, title: "מפגש עם עינת" }],
@@ -1028,6 +1072,13 @@
     return WEEK_OVERRIDES.filter(o => toDate(o.weekOf).getTime() === WEEK_START.getTime())[0];
   }
 
+  // תזכורת חד-פעמית ליום מסוים בשבוע המוצג (אם יש)
+  function dayNote(index) {
+    const ov = weekOverride();
+    if (!ov || !ov.notes) return null;
+    return ov.notes.filter(n => n.day === index)[0] || null;
+  }
+
   // פעילויות אחה״צ להצגה בשבוע הזה – ביום חופש אין חוגים
   function weekActs(index) {
     if (dayVacation(index)) return [];
@@ -1065,8 +1116,11 @@
       const vac = dayVacation(i);
       const u = (!vac && day.uniform) ? UNIFORMS[day.uniform] : null;   // ביום חופש אין תלבושת
       const sub = shortDate(dateOfDay(i)) + (u ? ' • ' + u.icon + ' ' + u.label : '');
+      const note = !vac ? dayNote(i) : null;
       html += '<th class="col-day' + (vac ? ' holiday-head' : '') + '">' + day.name +
-        '<span class="day-date">' + sub + '</span></th>';
+        '<span class="day-date">' + sub + '</span>' +
+        (note ? '<span class="day-note-chip">' + note.icon + ' ' + note.text + '</span>' : '') +
+        '</th>';
     });
     document.getElementById('tableHead').innerHTML = html;
   }
@@ -1329,6 +1383,15 @@
       </div>
     ` : '';
 
+    // תזכורת חד-פעמית ליום הזה, אם יש (כמו "להביא תפוח עץ")
+    const note = dayNote(index);
+    const noteHtml = note ? `
+      <div class="day-note-banner">
+        <div class="day-note-icon">${note.icon}</div>
+        <div class="day-note-text">${note.text}</div>
+      </div>
+    ` : '';
+
     const acts = weekActs(index);
     let actsHtml;
     if (acts.length) {
@@ -1353,6 +1416,7 @@
         <div class="day-end-badge">🔔 סיום: ${data.end}</div>
       </div>
       ${uniformHtml}
+      ${noteHtml}
       <div class="section-title">שיעורי בית ספר</div>
       <div class="lessons-list">
         ${lessonsHtml}
