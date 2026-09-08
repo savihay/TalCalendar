@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>מערכת שעות שבועית - טל</title>
+
+  <!-- PWA: התקנה למסך הבית ועבודה גם בלי אינטרנט -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="טל">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
 
@@ -1455,6 +1464,13 @@
     const UNITS = bodyRows + 0.8;       // שורת הסיום נמוכה יותר (0.8), הכותרת מוסיפה 4px
     const h = Math.max(34, Math.min(58, Math.floor((AVAILABLE - 4) / UNITS)));
     document.documentElement.style.setProperty('--print-row-h', h + 'px');
+  }
+
+  // רישום ה-service worker (מתעלם בשקט אם הדפדפן לא תומך או בפתיחה מקובץ מקומי)
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    });
   }
 
   window.addEventListener('DOMContentLoaded', () => {
