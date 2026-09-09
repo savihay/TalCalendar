@@ -280,6 +280,7 @@
     .compact-act.einat      { background: var(--einat-bg); border-color: var(--einat-border); color: var(--einat-text); }
     .compact-act.yahalom    { background: var(--yahalom-bg); border-color: var(--yahalom-border); color: var(--yahalom-text); }
     .compact-act.trial      { background: var(--trial-bg); border-color: var(--trial-border); color: var(--trial-text); }
+    .compact-act.roblox     { background: var(--trial-bg); border-color: var(--trial-border); color: var(--trial-text); }
 
     .time-pill {
       font-size: 0.65rem;
@@ -521,6 +522,7 @@
     .mobile-act-card.einat      { background: var(--einat-bg); border-color: var(--einat-border); color: var(--einat-text); }
     .mobile-act-card.yahalom    { background: var(--yahalom-bg); border-color: var(--yahalom-border); color: var(--yahalom-text); }
     .mobile-act-card.trial      { background: var(--trial-bg); border-color: var(--trial-border); color: var(--trial-text); }
+    .mobile-act-card.roblox     { background: var(--trial-bg); border-color: var(--trial-border); color: var(--trial-text); }
 
     .mobile-act-time {
       font-size: 0.95rem;
@@ -672,6 +674,47 @@
     }
     .vac-card.now .vac-flag { background: #d1fae5; color: #065f46; }
 
+    /* ניווט בין שבועות */
+    .week-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .week-nav button {
+      border: 1px solid #cbd5e1;
+      background: #fff;
+      color: #334155;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .week-nav button:hover { background: #f8fafc; }
+    .week-nav .week-label {
+      min-width: 190px;
+      text-align: center;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .week-nav .week-label .week-rel {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #64748b;
+    }
+    .week-nav .btn-today {
+      background: #eef2ff;
+      border-color: #c7d2fe;
+      color: #3730a3;
+    }
+    .week-nav .btn-today[hidden] { display: none; }
+
     /* Media Queries */
     @media screen and (max-width: 900px) {
       .vac-grid { grid-template-columns: repeat(2, 1fr); }
@@ -775,6 +818,7 @@
 
       /* לוח החופשות מודפס כעמוד שני – עמוד 1 נשאר מערכת השעות בלבד */
       .vac-banner { display: none !important; }
+      .week-nav { display: none !important; }
       .vacations-view {
         display: block !important;
         max-width: none !important;
@@ -836,6 +880,8 @@
     <!-- באנר סטטוס חופשה (rendered by JS) -->
     <div id="vacBannerMobile"></div>
 
+    <div class="week-nav" id="weekNavMobile"></div>
+
     <!-- Day Tabs (rendered by JS) -->
     <nav class="day-selector" id="daySelector" aria-label="בחירת יום"></nav>
 
@@ -857,6 +903,8 @@
         <h1 class="schedule-title">מערכת שעות שבועית</h1>
         <p class="schedule-subtitle">שנת הלימודים תשפ״ז • כיתה ד׳ <span id="printDateNote"></span></p>
       </div>
+
+      <div class="week-nav" id="weekNavDesktop"></div>
 
       <div class="table-wrapper">
         <table class="schedule-table">
@@ -913,6 +961,9 @@
       lessons: ["מורשת", "מתמטיקה", "אנגלית", "חנ״ג 🏃‍♂️", "תורה"],
       activities: [
         // מפגש המחוננים שהיה אמור להתקיים ב-8.9 נדחה לשני 14.9 – ראה WEEK_OVERRIDES
+        // חוג רובלוקס – נרשם לשנה, מתחיל אחרי שיעור הניסיון
+        { time: "13:45", title: "חוג רובלוקס 🎮", tableTitle: "רובלוקס", type: "roblox",
+          sub: "כיתה ד1", from: "09-15", until: "07-31" },
         // צופים – מתחיל ב-11.9
         { time: "17:00", title: "צופים ברייספלד ⚜️⛺", legendLabel: "רייספלד", type: "scouts", from: "09-11" }
       ]
@@ -1009,7 +1060,7 @@
 
   function resolveDate(mmdd) {
     const [m, day] = mmdd.split('-').map(Number);
-    const startY = schoolYearStart(TODAY);
+    const startY = schoolYearStart(TODAY);   // שנת הלימודים נקבעת לפי היום, לא לפי השבוע המוצג
     const year = (m >= 8) ? startY : startY + 1;
     return new Date(year, m - 1, day);
   }
@@ -1023,15 +1074,18 @@
     return new Date(d.getFullYear(), d.getMonth(), d.getDate());
   }
 
-  function isVisible(act) {
-    const today = startOfDay(TODAY);
-    if (act.from && today < resolveDate(act.from)) return false;
-    if (act.until && today > resolveDate(act.until)) return false;
+  /* כללי from/until נבדקים מול התאריך של היום המוצג בפועל,
+     כדי שגם כשמדפדפים לשבועות אחרים יוצג מה שבאמת מתקיים בהם. */
+  function isVisible(act, refDate) {
+    const ref = startOfDay(refDate || TODAY);
+    if (act.from && ref < resolveDate(act.from)) return false;
+    if (act.until && ref > resolveDate(act.until)) return false;
     return true;
   }
 
-  function visibleActs(day) {
-    return day.activities.filter(isVisible);
+  function visibleActs(index) {
+    const ref = dateOfDay(index);
+    return DAYS[index].activities.filter(a => isVisible(a, ref));
   }
 
   /* ---------- שבוע הלימודים המוצג ----------
@@ -1058,7 +1112,16 @@
   }
 
   const VIEW_DATE = viewDate(TODAY);
-  const WEEK_START = weekStartSunday(VIEW_DATE);
+
+  // כמה שבועות קדימה/אחורה מהשבוע הנוכחי מוצגים כרגע
+  let WEEK_OFFSET = 0;
+
+  function computeWeekStart() {
+    const base = weekStartSunday(VIEW_DATE);
+    return new Date(base.getFullYear(), base.getMonth(), base.getDate() + WEEK_OFFSET * 7);
+  }
+
+  let WEEK_START = computeWeekStart();
 
   function dateOfDay(index) {
     return new Date(WEEK_START.getFullYear(), WEEK_START.getMonth(), WEEK_START.getDate() + index);
@@ -1092,7 +1155,7 @@
   function weekActs(index) {
     if (dayVacation(index)) return [];
 
-    let acts = visibleActs(DAYS[index]);
+    let acts = visibleActs(index);
     const ov = weekOverride();
     if (ov) {
       if (ov.remove) {
@@ -1222,7 +1285,7 @@
     // שורות החוגים
     LEGEND_TYPES.forEach(entry => {
       const bits = [];
-      DAYS.forEach(day => visibleActs(day).forEach(act => {
+      DAYS.forEach((day, i) => visibleActs(i).forEach(act => {
         if (act.type !== entry.type) return;
         bits.push('יום ' + day.short + ' ב-' + act.time +
                   (act.legendLabel ? ' (' + act.legendLabel + ')' : ''));
@@ -1342,6 +1405,10 @@
       return '<button class="day-tab" data-day="' + i + '" onclick="switchDay(' + i + ')">' +
              day.tab + mark + '</button>';
     }).join('');
+
+    const realToday = realTodayIndex();
+    const tabs = nav.querySelectorAll('.day-tab');
+    if (realToday >= 0 && tabs[realToday]) tabs[realToday].classList.add('today');
   }
 
   function renderDay(index) {
@@ -1441,6 +1508,55 @@
     renderDay(index);
   }
 
+  /* ---------- ניווט בין שבועות ---------- */
+
+  function weekLabel() {
+    const rel = WEEK_OFFSET === 0 ? 'השבוע'
+              : WEEK_OFFSET === 1 ? 'שבוע הבא'
+              : WEEK_OFFSET === -1 ? 'שבוע שעבר'
+              : WEEK_OFFSET > 0 ? 'בעוד ' + WEEK_OFFSET + ' שבועות'
+              : 'לפני ' + Math.abs(WEEK_OFFSET) + ' שבועות';
+    return '<button onclick="shiftWeek(-1)" aria-label="שבוע קודם">‹</button>' +
+           '<div class="week-label">' + shortDate(dateOfDay(0)) + ' – ' + shortDate(dateOfDay(5)) +
+             '<span class="week-rel">' + rel + '</span></div>' +
+           '<button onclick="shiftWeek(1)" aria-label="שבוע הבא">›</button>' +
+           (WEEK_OFFSET === 0 ? ''
+             : '<button class="btn-today" onclick="goToThisWeek()">היום</button>');
+  }
+
+  function renderWeek() {
+    buildTableHead();
+    buildTableBody();
+    buildLegend();
+    buildTabs();
+    fitPrintRows();
+
+    const label = weekLabel();
+    ['weekNavMobile', 'weekNavDesktop'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = label;
+    });
+
+    document.getElementById('printDateNote').innerText =
+      '• שבוע ' + shortDate(dateOfDay(0)) + ' – ' + shortDate(dateOfDay(5)) +
+      '.' + dateOfDay(5).getFullYear();
+
+    renderDay(currentSelectedDay);
+  }
+
+  function shiftWeek(n) {
+    WEEK_OFFSET += n;
+    WEEK_START = computeWeekStart();
+    renderWeek();
+  }
+
+  function goToThisWeek() {
+    WEEK_OFFSET = 0;
+    WEEK_START = computeWeekStart();
+    currentSelectedDay = getTodayIndex();
+    renderWeek();
+  }
+
   function toggleVacationsView() {
     document.body.classList.toggle('show-vacations');
     const on = document.body.classList.contains('show-vacations');
@@ -1474,22 +1590,9 @@
   }
 
   window.addEventListener('DOMContentLoaded', () => {
-    buildTableHead();
-    buildTableBody();
-    buildLegend();
     buildVacations();
-    buildTabs();
-
-    fitPrintRows();
-
-    document.getElementById('printDateNote').innerText =
-      '• שבוע ' + shortDate(dateOfDay(0)) + ' – ' + shortDate(dateOfDay(5)) +
-      '.' + dateOfDay(5).getFullYear();
-
-    const tabs = document.querySelectorAll('.day-tab');
-    const realToday = realTodayIndex();
-    if (realToday >= 0 && tabs[realToday]) tabs[realToday].classList.add('today');
-    renderDay(getTodayIndex());
+    currentSelectedDay = getTodayIndex();
+    renderWeek();
   });
   </script>
 </body>
