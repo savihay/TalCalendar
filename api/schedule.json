@@ -1,0 +1,7400 @@
+{
+ "child": "טל",
+ "grade": "ד׳",
+ "timezone": "Asia/Jerusalem",
+ "generatedAt": "2026-09-11T11:48:59.843Z",
+ "coversFrom": "2026-09-06",
+ "coversTo": "2027-07-30",
+ "source": "https://savihay.github.io/TalCalendar/",
+ "notes": "ימי הלימודים הם ראשון–שישי. השעות הן שעת סיום הלימודים; activities הן חוגים ומפגשים אחרי הלימודים.",
+ "vacations": [
+  {
+   "name": "ראש השנה",
+   "from": "2026-09-11",
+   "to": "2026-09-13",
+   "back": "2026-09-14",
+   "isVacation": true,
+   "note": null
+  },
+  {
+   "name": "יום הכיפורים וסוכות",
+   "from": "2026-09-22",
+   "to": "2026-09-24",
+   "back": null,
+   "isVacation": true,
+   "note": "ימי חופשה בין יום הכיפורים לסוכות"
+  },
+  {
+   "name": "סוכות",
+   "from": "2026-09-25",
+   "to": "2026-10-03",
+   "back": "2026-10-04",
+   "isVacation": true,
+   "note": null
+  },
+  {
+   "name": "חנוכה",
+   "from": "2026-12-06",
+   "to": "2026-12-12",
+   "back": "2026-12-13",
+   "isVacation": true,
+   "note": null
+  },
+  {
+   "name": "ט״ו בשבט",
+   "from": "2027-01-23",
+   "to": "2027-01-23",
+   "back": null,
+   "isVacation": false,
+   "note": "אין חופש"
+  },
+  {
+   "name": "פורים",
+   "from": "2027-03-23",
+   "to": "2027-03-24",
+   "back": "2027-03-25",
+   "isVacation": true,
+   "note": null
+  },
+  {
+   "name": "פסח",
+   "from": "2027-04-13",
+   "to": "2027-04-28",
+   "back": "2027-04-29",
+   "isVacation": true,
+   "note": null
+  },
+  {
+   "name": "יום העצמאות",
+   "from": "2027-05-12",
+   "to": "2027-05-12",
+   "back": "2027-05-13",
+   "isVacation": true,
+   "note": null
+  },
+  {
+   "name": "חג השבועות",
+   "from": "2027-06-10",
+   "to": "2027-06-11",
+   "back": "2027-06-13",
+   "isVacation": true,
+   "note": null
+  }
+ ],
+ "days": [
+  {
+   "date": "2026-09-06",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-09-07",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-08",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "ניסיון רובלוקס",
+     "emoji": null,
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "trial"
+    },
+    {
+     "time": "15:20",
+     "title": "ניסיון מיינקראפט",
+     "emoji": null,
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "trial"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-09-09",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": "להביא תפוח עץ חתוך בכלי קטן"
+  },
+  {
+   "date": "2026-09-10",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-11",
+   "dayName": "יום שישי",
+   "vacation": {
+    "name": "ראש השנה",
+    "from": "2026-09-11",
+    "to": "2026-09-13",
+    "back": "2026-09-14"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-13",
+   "dayName": "יום ראשון",
+   "vacation": {
+    "name": "ראש השנה",
+    "from": "2026-09-11",
+    "to": "2026-09-13",
+    "back": "2026-09-14"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-14",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "מפגש מחוננים",
+     "emoji": null,
+     "details": "היכרות הורים וילדים ביהל״ם",
+     "startsOn": null,
+     "category": "gifted"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-09-15",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-09-16",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": "השבוע בלבד",
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-09-17",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-18",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-09-20",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-09-21",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-22",
+   "dayName": "יום שלישי",
+   "vacation": {
+    "name": "יום הכיפורים וסוכות",
+    "from": "2026-09-22",
+    "to": "2026-09-24",
+    "back": null
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-23",
+   "dayName": "יום רביעי",
+   "vacation": {
+    "name": "יום הכיפורים וסוכות",
+    "from": "2026-09-22",
+    "to": "2026-09-24",
+    "back": null
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-24",
+   "dayName": "יום חמישי",
+   "vacation": {
+    "name": "יום הכיפורים וסוכות",
+    "from": "2026-09-22",
+    "to": "2026-09-24",
+    "back": null
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-25",
+   "dayName": "יום שישי",
+   "vacation": {
+    "name": "סוכות",
+    "from": "2026-09-25",
+    "to": "2026-10-03",
+    "back": "2026-10-04"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-27",
+   "dayName": "יום ראשון",
+   "vacation": {
+    "name": "סוכות",
+    "from": "2026-09-25",
+    "to": "2026-10-03",
+    "back": "2026-10-04"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-28",
+   "dayName": "יום שני",
+   "vacation": {
+    "name": "סוכות",
+    "from": "2026-09-25",
+    "to": "2026-10-03",
+    "back": "2026-10-04"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-29",
+   "dayName": "יום שלישי",
+   "vacation": {
+    "name": "סוכות",
+    "from": "2026-09-25",
+    "to": "2026-10-03",
+    "back": "2026-10-04"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-09-30",
+   "dayName": "יום רביעי",
+   "vacation": {
+    "name": "סוכות",
+    "from": "2026-09-25",
+    "to": "2026-10-03",
+    "back": "2026-10-04"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-10-01",
+   "dayName": "יום חמישי",
+   "vacation": {
+    "name": "סוכות",
+    "from": "2026-09-25",
+    "to": "2026-10-03",
+    "back": "2026-10-04"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-10-02",
+   "dayName": "יום שישי",
+   "vacation": {
+    "name": "סוכות",
+    "from": "2026-09-25",
+    "to": "2026-10-03",
+    "back": "2026-10-04"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-10-04",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-05",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-10-06",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-07",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-08",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-09",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-11",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-12",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-10-13",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-14",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-15",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-16",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-18",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-19",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-10-20",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-21",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-22",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-23",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-25",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-26",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-10-27",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-28",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-29",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-30",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-01",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-02",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-11-03",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-04",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-05",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-06",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-08",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-09",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-11-10",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-11",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-12",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-13",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-15",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-16",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-11-17",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-18",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-19",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-20",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-22",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-23",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-11-24",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-25",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-26",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-27",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-29",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-11-30",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-12-01",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-02",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-03",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-04",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-06",
+   "dayName": "יום ראשון",
+   "vacation": {
+    "name": "חנוכה",
+    "from": "2026-12-06",
+    "to": "2026-12-12",
+    "back": "2026-12-13"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-12-07",
+   "dayName": "יום שני",
+   "vacation": {
+    "name": "חנוכה",
+    "from": "2026-12-06",
+    "to": "2026-12-12",
+    "back": "2026-12-13"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-12-08",
+   "dayName": "יום שלישי",
+   "vacation": {
+    "name": "חנוכה",
+    "from": "2026-12-06",
+    "to": "2026-12-12",
+    "back": "2026-12-13"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-12-09",
+   "dayName": "יום רביעי",
+   "vacation": {
+    "name": "חנוכה",
+    "from": "2026-12-06",
+    "to": "2026-12-12",
+    "back": "2026-12-13"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-12-10",
+   "dayName": "יום חמישי",
+   "vacation": {
+    "name": "חנוכה",
+    "from": "2026-12-06",
+    "to": "2026-12-12",
+    "back": "2026-12-13"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-12-11",
+   "dayName": "יום שישי",
+   "vacation": {
+    "name": "חנוכה",
+    "from": "2026-12-06",
+    "to": "2026-12-12",
+    "back": "2026-12-13"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-12-13",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-14",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-12-15",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-16",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-17",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-18",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-20",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-21",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-12-22",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-23",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-24",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-25",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-27",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-28",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2026-12-29",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-30",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-31",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-01",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-03",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-04",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-01-05",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-06",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-07",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-08",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-10",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-11",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-01-12",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-13",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-14",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-15",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-17",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-18",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-01-19",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-20",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-21",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-22",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-24",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-25",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-01-26",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-27",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-28",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-29",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-01-31",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-01",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-02-02",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-03",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-04",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-05",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-07",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-08",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-02-09",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-10",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-11",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-12",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-14",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-15",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-02-16",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-17",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-18",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-19",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-21",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-22",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-02-23",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-24",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-25",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-26",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-02-28",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-01",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-03-02",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-03",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-04",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-05",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-07",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-08",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-03-09",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-10",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-11",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-12",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-14",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-15",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-03-16",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-17",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-18",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-19",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-21",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-22",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-03-23",
+   "dayName": "יום שלישי",
+   "vacation": {
+    "name": "פורים",
+    "from": "2027-03-23",
+    "to": "2027-03-24",
+    "back": "2027-03-25"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-03-24",
+   "dayName": "יום רביעי",
+   "vacation": {
+    "name": "פורים",
+    "from": "2027-03-23",
+    "to": "2027-03-24",
+    "back": "2027-03-25"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-03-25",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-26",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-28",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-29",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-03-30",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-03-31",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-01",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-02",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-04",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-05",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-06",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-07",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-08",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-09",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-11",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-12",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-13",
+   "dayName": "יום שלישי",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-14",
+   "dayName": "יום רביעי",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-15",
+   "dayName": "יום חמישי",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-16",
+   "dayName": "יום שישי",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-18",
+   "dayName": "יום ראשון",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-19",
+   "dayName": "יום שני",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-20",
+   "dayName": "יום שלישי",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-21",
+   "dayName": "יום רביעי",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-22",
+   "dayName": "יום חמישי",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-23",
+   "dayName": "יום שישי",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-25",
+   "dayName": "יום ראשון",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-26",
+   "dayName": "יום שני",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-27",
+   "dayName": "יום שלישי",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-28",
+   "dayName": "יום רביעי",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-04-29",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-30",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-02",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-03",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-05-04",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-05",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-06",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-07",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-09",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-10",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-05-11",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-12",
+   "dayName": "יום רביעי",
+   "vacation": {
+    "name": "יום העצמאות",
+    "from": "2027-05-12",
+    "to": "2027-05-12",
+    "back": "2027-05-13"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-05-13",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-14",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-16",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-17",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-05-18",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-19",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-20",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-21",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-23",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-24",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-05-25",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-26",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-27",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-28",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-30",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-05-31",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-06-01",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-02",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-03",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-04",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-06",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-07",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-06-08",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-09",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-10",
+   "dayName": "יום חמישי",
+   "vacation": {
+    "name": "חג השבועות",
+    "from": "2027-06-10",
+    "to": "2027-06-11",
+    "back": "2027-06-13"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-06-11",
+   "dayName": "יום שישי",
+   "vacation": {
+    "name": "חג השבועות",
+    "from": "2027-06-10",
+    "to": "2027-06-11",
+    "back": "2027-06-13"
+   },
+   "school": false,
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-06-13",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-14",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-06-15",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-16",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-17",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-18",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-20",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-21",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-06-22",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-23",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-24",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-25",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-27",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-28",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-06-29",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-30",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-01",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-02",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-04",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-05",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-07-06",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-07",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-08",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-09",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-11",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-12",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-07-13",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-14",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-15",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-16",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-18",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-19",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-07-20",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-21",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-22",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-23",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-25",
+   "dayName": "יום ראשון",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "כישורי חיים",
+    "מתמטיקה",
+    "אומנות",
+    "אומנות",
+    "אנגלית",
+    "כישורי שפה"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-26",
+   "dayName": "יום שני",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "ספר זה כל הסיפור",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מגלים עולמות-שכבתי",
+    "אנגלית",
+    "מפתח הלב"
+   ],
+   "activities": [],
+   "note": null
+  },
+  {
+   "date": "2027-07-27",
+   "dayName": "יום שלישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מורשת",
+    "מתמטיקה",
+    "אנגלית",
+    "חנ״ג",
+    "תורה"
+   ],
+   "activities": [
+    {
+     "time": "13:45",
+     "title": "חוג רובלוקס",
+     "emoji": "🎮",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "roblox"
+    },
+    {
+     "time": "17:00",
+     "title": "צופים ברייספלד",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-28",
+   "dayName": "יום רביעי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "13:30",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "כישורי שפה",
+    "כישורי שפה",
+    "מדעים",
+    "תלון/משחקי חשיבה",
+    "מולדת"
+   ],
+   "activities": [
+    {
+     "time": "15:00",
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-29",
+   "dayName": "יום חמישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "12:45",
+   "uniform": null,
+   "lessons": [
+    "מתמטיקה",
+    "מתמטיקה",
+    "תורה, חברתי",
+    "מדעים",
+    "אנגלית"
+   ],
+   "activities": [
+    {
+     "time": "14:30",
+     "title": "תכנית מצטיינים",
+     "emoji": "🎓",
+     "details": "ביה״ס יהל״ם",
+     "startsOn": "2026-10-08",
+     "category": "yahalom"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-07-30",
+   "dayName": "יום שישי",
+   "vacation": null,
+   "school": true,
+   "endsAt": "11:45",
+   "uniform": "תלבושת ספורט",
+   "lessons": [
+    "מדעים",
+    "כישורי שפה",
+    "כישורי שפה",
+    "חנ״ג"
+   ],
+   "activities": [
+    {
+     "time": "16:00",
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  }
+ ]
+}
