@@ -12,7 +12,7 @@ push שנוגע ב-`index.html`. ה-CDN של GitHub Pages מחזיר `Access-Con
 ```jsonc
 {
   "child": "טל", "grade": "ד׳", "timezone": "Asia/Jerusalem",
-  "generatedAt": "2026-09-11T…", "coversFrom": "2026-09-06", "coversTo": "2027-07-30",
+  "schoolYear": "2026/2027", "coversFrom": "2026-09-06", "coversTo": "2027-07-30",
   "vacations": [ { "name": "סוכות", "from": "2026-09-25", "to": "2026-10-03", "back": "2026-10-04" } ],
   "days": [
     {

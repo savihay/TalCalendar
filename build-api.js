@@ -39,12 +39,19 @@ vm.runInNewContext(script + `
 const H = sandbox.__helpers;
 const iso = d => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
 
-/* עד סוף שנת הלימודים (31 ביולי של שנת הסיום) */
+/* כל שנת הלימודים: מהשבוע הראשון של ספטמבר ועד 31 ביולי.
+   הטווח קבוע ולא תלוי ביום שבו הקובץ נבנה – אחרת כל בנייה הייתה
+   מייצרת פלט שונה וה-Action היה מתנגש בקומיטים מקומיים. */
 const startY = H.TODAY.getMonth() >= 7 ? H.TODAY.getFullYear() : H.TODAY.getFullYear() - 1;
 const LAST = new Date(startY + 1, 6, 31);
+const sep1 = new Date(startY, 8, 1);
+const FIRST = new Date(startY, 8, 1 + ((7 - sep1.getDay()) % 7));   // יום ראשון הראשון בספטמבר
+
+H.setWeek(0);
+const FIRST_OFF = Math.round((FIRST - H.dateOfDay(0)) / (7 * 864e5));
 
 const days = [];
-for (let off = 0; off < 60; off++) {
+for (let off = FIRST_OFF; off < FIRST_OFF + 60; off++) {
   H.setWeek(off);
   if (H.dateOfDay(0) > LAST) break;
   for (let i = 0; i < 6; i++) {
@@ -79,7 +86,7 @@ const out = {
   child: 'טל',
   grade: 'ד׳',
   timezone: 'Asia/Jerusalem',
-  generatedAt: new Date().toISOString(),
+  schoolYear: startY + '/' + (startY + 1),
   coversFrom: days[0].date,
   coversTo: days[days.length - 1].date,
   source: 'https://savihay.github.io/TalCalendar/',
