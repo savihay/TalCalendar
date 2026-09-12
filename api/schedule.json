@@ -2,8 +2,8 @@
  "child": "טל",
  "grade": "ד׳",
  "timezone": "Asia/Jerusalem",
- "generatedAt": "2026-09-11T11:49:09.466Z",
- "coversFrom": "2026-09-06",
+ "generatedAt": "2026-09-12T17:35:51.831Z",
+ "coversFrom": "2026-09-13",
  "coversTo": "2027-07-30",
  "source": "https://savihay.github.io/TalCalendar/",
  "notes": "ימי הלימודים הם ראשון–שישי. השעות הן שעת סיום הלימודים; activities הן חוגים ומפגשים אחרי הלימודים.",
@@ -83,153 +83,6 @@
  ],
  "days": [
   {
-   "date": "2026-09-06",
-   "dayName": "יום ראשון",
-   "vacation": null,
-   "school": true,
-   "endsAt": "13:30",
-   "uniform": null,
-   "lessons": [
-    "כישורי חיים",
-    "מתמטיקה",
-    "אומנות",
-    "אומנות",
-    "אנגלית",
-    "כישורי שפה"
-   ],
-   "activities": [
-    {
-     "time": "15:00",
-     "title": "כדורסל",
-     "emoji": "🏀",
-     "details": null,
-     "startsOn": null,
-     "category": "basketball"
-    },
-    {
-     "time": "18:00",
-     "title": "מפגש עם עינת",
-     "emoji": null,
-     "details": null,
-     "startsOn": null,
-     "category": "einat"
-    }
-   ],
-   "note": null
-  },
-  {
-   "date": "2026-09-07",
-   "dayName": "יום שני",
-   "vacation": null,
-   "school": true,
-   "endsAt": "13:30",
-   "uniform": null,
-   "lessons": [
-    "ספר זה כל הסיפור",
-    "כישורי שפה",
-    "כישורי שפה",
-    "מגלים עולמות-שכבתי",
-    "אנגלית",
-    "מפתח הלב"
-   ],
-   "activities": [],
-   "note": null
-  },
-  {
-   "date": "2026-09-08",
-   "dayName": "יום שלישי",
-   "vacation": null,
-   "school": true,
-   "endsAt": "12:45",
-   "uniform": "תלבושת ספורט",
-   "lessons": [
-    "מורשת",
-    "מתמטיקה",
-    "אנגלית",
-    "חנ״ג",
-    "תורה"
-   ],
-   "activities": [
-    {
-     "time": "13:45",
-     "title": "ניסיון רובלוקס",
-     "emoji": null,
-     "details": "כיתה ד1",
-     "startsOn": null,
-     "category": "trial"
-    },
-    {
-     "time": "15:20",
-     "title": "ניסיון מיינקראפט",
-     "emoji": null,
-     "details": "כיתה ד1",
-     "startsOn": null,
-     "category": "trial"
-    }
-   ],
-   "note": null
-  },
-  {
-   "date": "2026-09-09",
-   "dayName": "יום רביעי",
-   "vacation": null,
-   "school": true,
-   "endsAt": "13:30",
-   "uniform": null,
-   "lessons": [
-    "מתמטיקה",
-    "כישורי שפה",
-    "כישורי שפה",
-    "מדעים",
-    "תלון/משחקי חשיבה",
-    "מולדת"
-   ],
-   "activities": [
-    {
-     "time": "15:00",
-     "title": "כדורסל",
-     "emoji": "🏀",
-     "details": null,
-     "startsOn": null,
-     "category": "basketball"
-    }
-   ],
-   "note": "להביא תפוח עץ חתוך בכלי קטן"
-  },
-  {
-   "date": "2026-09-10",
-   "dayName": "יום חמישי",
-   "vacation": null,
-   "school": true,
-   "endsAt": "12:45",
-   "uniform": null,
-   "lessons": [
-    "מתמטיקה",
-    "מתמטיקה",
-    "תורה, חברתי",
-    "מדעים",
-    "אנגלית"
-   ],
-   "activities": [],
-   "note": null
-  },
-  {
-   "date": "2026-09-11",
-   "dayName": "יום שישי",
-   "vacation": {
-    "name": "ראש השנה",
-    "from": "2026-09-11",
-    "to": "2026-09-13",
-    "back": "2026-09-14"
-   },
-   "school": false,
-   "endsAt": null,
-   "uniform": null,
-   "lessons": [],
-   "activities": [],
-   "note": null
-  },
-  {
    "date": "2026-09-13",
    "dayName": "יום ראשון",
    "vacation": {
@@ -294,6 +147,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -673,6 +534,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -836,6 +705,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -1003,6 +880,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -1166,6 +1051,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -1333,6 +1226,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -1496,6 +1397,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -1663,6 +1572,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -1828,6 +1745,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -1991,6 +1916,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -2254,6 +2187,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -2417,6 +2358,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -2584,6 +2533,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -2747,6 +2704,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -2914,6 +2879,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -3077,6 +3050,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -3244,6 +3225,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -3407,6 +3396,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -3574,6 +3571,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -3737,6 +3742,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -3904,6 +3917,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -4067,6 +4088,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -4234,6 +4263,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -4397,6 +4434,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -4700,6 +4745,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -4863,6 +4916,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -5358,6 +5419,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -5523,6 +5592,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -5675,6 +5752,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -5842,6 +5927,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -6005,6 +6098,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -6172,6 +6273,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -6316,6 +6425,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -6483,6 +6600,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -6646,6 +6771,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -6813,6 +6946,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -6976,6 +7117,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",
@@ -7143,6 +7292,14 @@
      "category": "roblox"
     },
     {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "17:00",
      "title": "צופים ברייספלד",
      "emoji": "⚜⛺",
@@ -7306,6 +7463,14 @@
      "details": "כיתה ד1",
      "startsOn": null,
      "category": "roblox"
+    },
+    {
+     "time": "15:20",
+     "title": "חוג מיינקראפט",
+     "emoji": "⛏",
+     "details": "כיתה ד1",
+     "startsOn": null,
+     "category": "minecraft"
     },
     {
      "time": "17:00",

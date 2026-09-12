@@ -40,6 +40,10 @@
       --trial-bg: #ecfeff;
       --trial-border: #06b6d4;
       --trial-text: #0e7490;
+
+      --mc-bg: #f0fdf4;
+      --mc-border: #22c55e;
+      --mc-text: #15803d;
       --uniform-bg: #fffbeb;
       --uniform-border: #f59e0b;
       --uniform-text: #92400e;
@@ -281,6 +285,7 @@
     .compact-act.yahalom    { background: var(--yahalom-bg); border-color: var(--yahalom-border); color: var(--yahalom-text); }
     .compact-act.trial      { background: var(--trial-bg); border-color: var(--trial-border); color: var(--trial-text); }
     .compact-act.roblox     { background: var(--trial-bg); border-color: var(--trial-border); color: var(--trial-text); }
+    .compact-act.minecraft  { background: var(--mc-bg); border-color: var(--mc-border); color: var(--mc-text); }
 
     .time-pill {
       font-size: 0.65rem;
@@ -523,6 +528,7 @@
     .mobile-act-card.yahalom    { background: var(--yahalom-bg); border-color: var(--yahalom-border); color: var(--yahalom-text); }
     .mobile-act-card.trial      { background: var(--trial-bg); border-color: var(--trial-border); color: var(--trial-text); }
     .mobile-act-card.roblox     { background: var(--trial-bg); border-color: var(--trial-border); color: var(--trial-text); }
+    .mobile-act-card.minecraft  { background: var(--mc-bg); border-color: var(--mc-border); color: var(--mc-text); }
 
     .mobile-act-time {
       font-size: 0.95rem;
@@ -963,6 +969,9 @@
         // מפגש המחוננים שהיה אמור להתקיים ב-8.9 נדחה לשני 14.9 – ראה WEEK_OVERRIDES
         // חוג רובלוקס – נרשם לשנה, מתחיל אחרי שיעור הניסיון
         { time: "13:45", title: "חוג רובלוקס 🎮", tableTitle: "רובלוקס", type: "roblox",
+          sub: "כיתה ד1", from: "09-15", until: "07-31" },
+        // חוג מיינקראפט – נרשם לשנה, מתחיל אחרי שיעור הניסיון
+        { time: "15:20", title: "חוג מיינקראפט ⛏️", tableTitle: "מיינקראפט", type: "minecraft",
           sub: "כיתה ד1", from: "09-15", until: "07-31" },
         // צופים – מתחיל ב-11.9
         { time: "17:00", title: "צופים ברייספלד ⚜️⛺", legendLabel: "רייספלד", type: "scouts", from: "09-11" }
