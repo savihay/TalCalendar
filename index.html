@@ -974,7 +974,7 @@
         { time: "15:20", title: "חוג מיינקראפט ⛏️", tableTitle: "מיינקראפט", type: "minecraft",
           sub: "כיתה ד1", from: "09-15", until: "07-31" },
         // צופים – מתחיל ב-11.9
-        { time: "17:00", title: "צופים ברייספלד ⚜️⛺", legendLabel: "רייספלד", type: "scouts", from: "09-11" }
+        { time: "17:00", title: "צופים בפארק שטרן ⚜️⛺", legendLabel: "פארק שטרן", type: "scouts", from: "09-11" }
       ]
     },
     {
@@ -1058,13 +1058,19 @@
         { day: 2, icon: "📘", text: "שעתיים ראשונות מתמטיקה – ספר ומחברת" },
         { day: 4, icon: "📐", text: "ספר גיאומטריה בנוסף לספר מתמטיקה" }
       ],
-      remove: [{ day: 0, title: "מפגש עם עינת" }],
+      remove: [
+        { day: 0, title: "מפגש עם עינת" },
+        { day: 2, title: "צופים בפארק שטרן ⚜️⛺" }
+      ],
       add: [
         // מפגש המחוננים נדחה מ-8.9 לשני 14.9 ב-16:00 (היכרות הורים וילדים ביהל״ם)
         { day: 1, time: "16:00", title: "מפגש מחוננים", type: "gifted",
           sub: "היכרות הורים וילדים ביהל״ם" },
         // מפגש עם עינת הוזז מיום שני 14.9 ליום רביעי 16.9 ב-18:00
-        { day: 3, time: "18:00", title: "מפגש עם עינת", type: "einat", sub: "השבוע בלבד" }
+        { day: 3, time: "18:00", title: "מפגש עם עינת", type: "einat", sub: "השבוע בלבד" },
+        // השבוע הצופים של שלישי בשבט ולא בפארק שטרן
+        { day: 2, time: "17:00", title: "צופים בשבט ⚜️⛺", legendLabel: "בשבט",
+          type: "scouts", sub: "השבוע בלבד" }
       ]
     }
   ];
@@ -1314,7 +1320,7 @@
     // שורות החוגים
     LEGEND_TYPES.forEach(entry => {
       const bits = [];
-      DAYS.forEach((day, i) => visibleActs(i).forEach(act => {
+      DAYS.forEach((day, i) => weekActs(i).forEach(act => {
         if (act.type !== entry.type) return;
         bits.push('יום ' + day.short + ' ב-' + act.time +
                   (act.legendLabel ? ' (' + act.legendLabel + ')' : ''));
