@@ -1048,6 +1048,16 @@
     },
     {
       weekOf: "2026-09-13",
+      /* הודעת המורה 14.9: מורשת הוקדם לשני במקום מגלים עולמות (שיתחיל אחרי החגים),
+         ובשלישי שתי השעות הראשונות מתמטיקה. */
+      lessons: [
+        { day: 1, at: 3, title: "מורשת" },
+        { day: 2, at: 0, title: "מתמטיקה" }
+      ],
+      notes: [
+        { day: 2, icon: "📘", text: "שעתיים ראשונות מתמטיקה – ספר ומחברת" },
+        { day: 4, icon: "📐", text: "ספר גיאומטריה בנוסף לספר מתמטיקה" }
+      ],
       remove: [{ day: 0, title: "מפגש עם עינת" }],
       add: [
         // מפגש המחוננים נדחה מ-8.9 לשני 14.9 ב-16:00 (היכרות הורים וילדים ביהל״ם)
@@ -1177,6 +1187,16 @@
     return acts.sort((a, b) => a.time.localeCompare(b.time));
   }
 
+  // שיעורי הבוקר של יום בשבוע המוצג – כולל החלפות חד-פעמיות
+  function weekLessons(index) {
+    const base = DAYS[index].lessons;
+    const ov = weekOverride();
+    if (!ov || !ov.lessons) return base;
+    const out = base.slice();
+    ov.lessons.filter(l => l.day === index).forEach(l => { out[l.at] = l.title; });
+    return out;
+  }
+
   /* הערה מוצגת לפעילות. תאריכי from/until הם לוגיקה בלבד – הם קובעים אם
      הפעילות מוצגת, ולא מוצגים כטקסט. היוצא מן הכלל: startsOn, כשהפעילות
      מופיעה בלוח עוד לפני המפגש הראשון בפועל. */
@@ -1219,7 +1239,7 @@
   }
 
   function buildTableBody() {
-    const maxLessons = Math.max.apply(null, DAYS.map(d => d.lessons.length));
+    const maxLessons = Math.max.apply(null, DAYS.map((d, i) => weekLessons(i).length));
     const vacs = DAYS.map((d, i) => dayVacation(i));
     let html = '';
 
@@ -1237,7 +1257,7 @@
           }
           return;   // בשאר השורות התא כבר מכוסה ע"י ה-rowspan
         }
-        const lesson = day.lessons[i];
+        const lesson = weekLessons(d)[i];
         html += lesson
           ? '<td class="lesson-cell">' + lesson + '</td>'
           : '<td class="empty-cell">—</td>';
@@ -1429,7 +1449,7 @@
       tab.classList.toggle('active', i === index);
     });
 
-    const lessonsHtml = data.lessons.map((lesson, idx) => `
+    const lessonsHtml = weekLessons(index).map((lesson, idx) => `
       <div class="lesson-item">
         <div class="lesson-num">${idx + 1}</div>
         <div class="lesson-name">${lesson}</div>

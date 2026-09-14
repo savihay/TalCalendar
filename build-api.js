@@ -33,7 +33,7 @@ sandbox.__emit = function (helpers) { sandbox.__helpers = helpers; };
 vm.runInNewContext(script + `
   __emit({ DAYS, VACATIONS, UNIFORMS, TODAY,
            setWeek: o => { WEEK_OFFSET = o; WEEK_START = computeWeekStart(); },
-           dateOfDay, dayVacation, dayNote, weekActs, resolveDate });
+           dateOfDay, dayVacation, dayNote, weekActs, weekLessons, resolveDate });
 `, sandbox, { filename: 'index.html' });
 
 const H = sandbox.__helpers;
@@ -68,7 +68,7 @@ for (let off = FIRST_OFF; off < FIRST_OFF + 60; off++) {
       school: !vac,
       endsAt: vac ? null : src.end,
       uniform: uni ? uni.label : null,
-      lessons: vac ? [] : src.lessons.map(clean),
+      lessons: vac ? [] : H.weekLessons(i).map(clean),
       activities: H.weekActs(i).map(a => ({
         time: a.time,
         title: clean(a.title),
