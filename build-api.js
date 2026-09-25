@@ -31,7 +31,7 @@ const icons = s => (s.match(EMOJI) || []).join('').replace(/[‍️]/g, '');
 sandbox.__emit = function (helpers) { sandbox.__helpers = helpers; };
 
 vm.runInNewContext(script + `
-  __emit({ DAYS, VACATIONS, UNIFORMS, TODAY,
+  __emit({ DAYS, SATURDAY, VACATIONS, UNIFORMS, TODAY,
            setWeek: o => { WEEK_OFFSET = o; WEEK_START = computeWeekStart(); },
            dateOfDay, dayVacation, dayNote, weekActs, weekLessons, resolveDate });
 `, sandbox, { filename: 'index.html' });
@@ -54,26 +54,30 @@ const days = [];
 for (let off = FIRST_OFF; off < FIRST_OFF + 60; off++) {
   H.setWeek(off);
   if (H.dateOfDay(0) > LAST) break;
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i <= 6; i++) {            // 6 = שבת, שלא מוצגת באפליקציה אבל כן ב-API
     const date = H.dateOfDay(i);
     if (date > LAST) continue;
+    const sat = i === 6;
     const vac = H.dayVacation(i);
-    const src = H.DAYS[i];
+    const src = sat ? H.SATURDAY : H.DAYS[i];
     const note = vac ? null : H.dayNote(i);
-    const uni = (!vac && src.uniform) ? H.UNIFORMS[src.uniform] : null;
+    const uni = (!vac && !sat && src.uniform) ? H.UNIFORMS[src.uniform] : null;
     days.push({
       date: iso(date),
       dayName: src.name,
       vacation: vac ? { name: vac.name, from: vac.start, to: vac.end, back: vac.back || null } : null,
-      school: !vac,
-      endsAt: vac ? null : src.end,
+      school: !vac && !sat,
+      off: sat ? 'weekend' : (vac ? 'vacation' : null),
+      endsAt: (vac || sat) ? null : src.end,
       uniform: uni ? uni.label : null,
-      lessons: vac ? [] : H.weekLessons(i).map(clean),
+      lessons: (vac || sat) ? [] : H.weekLessons(i).map(clean),
       activities: H.weekActs(i).map(a => ({
         time: a.time,
+        end: a.end || null,
         title: clean(a.title),
         emoji: icons(a.title) || null,
         details: a.sub || null,
+        bring: a.bring || null,
         startsOn: a.startsOn ? iso(H.resolveDate(a.startsOn)) : null,
         category: a.type
       })),
@@ -90,7 +94,9 @@ const out = {
   coversFrom: days[0].date,
   coversTo: days[days.length - 1].date,
   source: 'https://savihay.github.io/TalCalendar/',
-  notes: 'ימי הלימודים הם ראשון–שישי. השעות הן שעת סיום הלימודים; activities הן חוגים ומפגשים אחרי הלימודים.',
+  notes: 'ימי הלימודים הם ראשון–שישי; שבת מופיעה עם off="weekend". endsAt הוא שעת סיום הלימודים, ' +
+         'ו-activities הן חוגים ומפגשים אחרי הלימודים. ביום חופש מופיעים רק החוגים שממשיכים ' +
+         '(כדורסל, צופים, מפגש עם עינת). end ו-bring יכולים להיות null כשלא ידוע.',
   vacations: H.VACATIONS.map(v => ({
     name: v.name, from: v.start, to: v.end, back: v.back || null,
     isVacation: !v.noVacation, note: v.note || null

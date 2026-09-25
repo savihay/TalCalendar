@@ -953,8 +953,9 @@
       name: "יום ראשון", short: "א׳", tab: "א׳", end: "13:30", uniform: null,
       lessons: ["כישורי חיים", "מתמטיקה", "אומנות", "אומנות", "אנגלית", "כישורי שפה"],
       activities: [
-        { time: "15:00", title: "כדורסל 🏀", type: "basketball" },
-        { time: "18:00", title: "מפגש עם עינת", type: "einat" }
+        { time: "15:00", title: "כדורסל 🏀", type: "basketball",
+          bring: "בגדי ספורט ונעלי כדורסל", duringVacation: true },
+        { time: "18:00", title: "מפגש עם עינת", type: "einat", duringVacation: true }
       ]
     },
     {
@@ -969,19 +970,21 @@
         // מפגש המחוננים שהיה אמור להתקיים ב-8.9 נדחה לשני 14.9 – ראה WEEK_OVERRIDES
         // חוג רובלוקס – נרשם לשנה, מתחיל אחרי שיעור הניסיון
         { time: "13:45", title: "חוג רובלוקס 🎮", tableTitle: "רובלוקס", type: "roblox",
-          sub: "כיתה ד1", from: "09-15", until: "07-31" },
+          sub: "כיתה ד1", end: "15:15", from: "09-15", until: "07-31" },
         // חוג מיינקראפט – נרשם לשנה, מתחיל אחרי שיעור הניסיון
         { time: "15:20", title: "חוג מיינקראפט ⛏️", tableTitle: "מיינקראפט", type: "minecraft",
-          sub: "כיתה ד1", from: "09-15", until: "07-31" },
+          sub: "כיתה ד1", end: "16:50", from: "09-15", until: "07-31" },
         // צופים – מתחיל ב-11.9
-        { time: "17:00", title: "צופים בפארק שטרן ⚜️⛺", legendLabel: "פארק שטרן", type: "scouts", from: "09-11" }
+        { time: "17:00", title: "צופים בפארק שטרן ⚜️⛺", legendLabel: "פארק שטרן", type: "scouts",
+          bring: "חולצת צופים", duringVacation: true, from: "09-11" }
       ]
     },
     {
       name: "יום רביעי", short: "ד׳", tab: "ד׳", end: "13:30", uniform: null,
       lessons: ["מתמטיקה", "כישורי שפה", "כישורי שפה", "מדעים", "תלון/משחקי חשיבה", "מולדת"],
       activities: [
-        { time: "15:00", title: "כדורסל 🏀", type: "basketball" }
+        { time: "15:00", title: "כדורסל 🏀", type: "basketball",
+          bring: "בגדי ספורט ונעלי כדורסל", duringVacation: true }
       ]
     },
     {
@@ -998,10 +1001,16 @@
       lessons: ["מדעים", "כישורי שפה", "כישורי שפה", "חנ״ג 🏃‍♂️"],
       activities: [
         // צופים – מתחיל ב-11.9
-        { time: "16:00", title: "צופים בשבט ⚜️⛺", legendLabel: "בשבט", type: "scouts", from: "09-11" }
+        { time: "16:00", title: "צופים בשבט ⚜️⛺", legendLabel: "בשבט", type: "scouts",
+          bring: "חולצת צופים", duringVacation: true, from: "09-11" }
       ]
     }
   ];
+
+  /* שבת אינה חלק משבוע הלימודים ולכן לא מוצגת באפליקציה,
+     אבל כן נכללת ב-API כדי שסוכן AI יוכל לענות גם עליה.
+     אפשר לתלות עליה פעילויות בדיוק כמו על שאר הימים (day: 6 ב-WEEK_OVERRIDES). */
+  const SATURDAY = { name: "יום שבת", short: "ש׳", end: null, uniform: null, lessons: [], activities: [] };
 
   /* לוח חופשות תשפ״ז – לפי לוח החופשות של בית הספר.
      התאריכים מלאים (כולל שנה) כי החופשות חוצות את גבול השנה האזרחית.
@@ -1110,7 +1119,7 @@
 
   function visibleActs(index) {
     const ref = dateOfDay(index);
-    return DAYS[index].activities.filter(a => isVisible(a, ref));
+    return (DAYS[index] || SATURDAY).activities.filter(a => isVisible(a, ref));
   }
 
   /* ---------- שבוע הלימודים המוצג ----------
@@ -1178,9 +1187,12 @@
 
   // פעילויות אחה״צ להצגה בשבוע הזה – ביום חופש אין חוגים
   function weekActs(index) {
-    if (dayVacation(index)) return [];
-
     let acts = visibleActs(index);
+
+    /* בחופשה אין לימודים, אבל חלק מהחוגים (כדורסל, צופים, עינת) ממשיכים.
+       שינוי חד-פעמי שנוסף במפורש לשבוע מוצג תמיד. */
+    if (dayVacation(index)) acts = acts.filter(a => a.duringVacation);
+
     const ov = weekOverride();
     if (ov) {
       if (ov.remove) {
@@ -1478,6 +1490,11 @@
           <div class="mh-sub">אין לימודים</div>
           ${vac.back ? `<div class="mh-back">חזרה ללימודים: ${dayAndDate(vac.back)}</div>` : ''}
         </div>
+        ${weekActs(index).length ? `
+          <div class="afternoon-section">
+            <div class="section-title" style="padding:0 0 8px 0;">מתקיים למרות החופש</div>
+            ${actsSectionHtml(index)}
+          </div>` : ''}
       `;
       return;
     }
@@ -1503,23 +1520,7 @@
       </div>
     ` : '';
 
-    const acts = weekActs(index);
-    let actsHtml;
-    if (acts.length) {
-      actsHtml = acts.map(act => {
-        const note = actNote(act);
-        return `
-        <div class="mobile-act-card ${act.type}">
-          <div class="mobile-act-time">${act.time}</div>
-          <div>
-            <div class="mobile-act-title">${act.title}</div>
-            ${note ? `<div class="mobile-act-sub">${note}</div>` : ''}
-          </div>
-        </div>`;
-      }).join('');
-    } else {
-      actsHtml = `<div class="no-activities">אין חוגים קבועים ביום זה 🎉</div>`;
-    }
+    const actsHtml = actsSectionHtml(index);
 
     container.innerHTML = `
       <div class="card-header">
@@ -1537,6 +1538,25 @@
         ${actsHtml}
       </div>
     `;
+  }
+
+  // כרטיסי החוגים של יום מסוים (משותף ליום רגיל וליום חופש)
+  function actsSectionHtml(index) {
+    const acts = weekActs(index);
+    if (acts.length) {
+      return acts.map(act => {
+        const note = actNote(act);
+        return `
+        <div class="mobile-act-card ${act.type}">
+          <div class="mobile-act-time">${act.time}</div>
+          <div>
+            <div class="mobile-act-title">${act.title}</div>
+            ${note ? `<div class="mobile-act-sub">${note}</div>` : ''}
+          </div>
+        </div>`;
+      }).join('');
+    }
+    return `<div class="no-activities">אין חוגים קבועים ביום זה 🎉</div>`;
   }
 
   function switchDay(index) {

@@ -30,7 +30,9 @@
 
 ```js
 DAYS[0..5]            // ראשון עד שישי. { name, short, tab, end, uniform, lessons[], activities[] }
-activity              // { time, title, tableTitle?, sub?, type, legendLabel?, from?, until?, startsOn? }
+activity              // { time, title, tableTitle?, sub?, type, legendLabel?, from?, until?, startsOn?,
+                      //   end?, bring?, duringVacation? }
+SATURDAY              // שבת – לא מוצגת באפליקציה, נכללת ב-API בלבד (אינדקס 6)
 VACATIONS[]           // { name, icon, start, end, back?, noVacation?, note? }  – תאריך מלא YYYY-MM-DD
 WEEK_OVERRIDES[]      // שינוי חד-פעמי לשבוע אחד
 ```
@@ -53,9 +55,17 @@ WEEK_OVERRIDES[]      // שינוי חד-פעמי לשבוע אחד
 זו הדרך הנכונה לכל "השבוע ספציפית…" – **לא נוגעים ב-`DAYS`**. שינוי קבוע ("מעכשיו והלאה")
 כן נכנס ל-`DAYS`; אם הוא מתחיל בתאריך עתידי, מוסיפים לו `from`.
 
+### חוגים בחופשה
+
+יום שנופל בתוך `start..end` של חופשה מוצג כיום חופש, ומוצגים בו רק חוגים עם
+`duringVacation: true` (כדורסל, צופים, עינת). חוגים שעוצרים בחופשות – בלי הדגל.
+שינוי חד-פעמי שנוסף ב-`add` מוצג תמיד, גם ביום חופש.
+
+`end` (שעת סיום החוג) ו-`bring` (מה להביא) הם אופציונליים ומשמשים בעיקר את ה-API.
+
 ### חופשות
 
-יום שנופל בתוך `start..end` של חופשה מוצג כיום חופש בכל התצוגות, והחוגים שלו נעלמים אוטומטית.
+יום שנופל בתוך `start..end` של חופשה מוצג כיום חופש בכל התצוגות.
 ההחלפה בין שבועות היא בשבת (`weekStartSunday`), ואחרי 19:00 מוצג היום הבא (`DAY_ENDS_AT_HOUR`).
 
 ### סוג פעילות (`type`)

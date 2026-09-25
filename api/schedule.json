@@ -4,9 +4,9 @@
  "timezone": "Asia/Jerusalem",
  "schoolYear": "2026/2027",
  "coversFrom": "2026-09-06",
- "coversTo": "2027-07-30",
+ "coversTo": "2027-07-31",
  "source": "https://savihay.github.io/TalCalendar/",
- "notes": "ימי הלימודים הם ראשון–שישי. השעות הן שעת סיום הלימודים; activities הן חוגים ומפגשים אחרי הלימודים.",
+ "notes": "ימי הלימודים הם ראשון–שישי; שבת מופיעה עם off=\"weekend\". endsAt הוא שעת סיום הלימודים, ו-activities הן חוגים ומפגשים אחרי הלימודים. ביום חופש מופיעים רק החוגים שממשיכים (כדורסל, צופים, מפגש עם עינת). end ו-bring יכולים להיות null כשלא ידוע.",
  "vacations": [
   {
    "name": "ראש השנה",
@@ -87,6 +87,7 @@
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -100,17 +101,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -122,6 +127,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -140,6 +146,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -152,17 +159,21 @@
    "activities": [
     {
      "time": "13:45",
+     "end": null,
      "title": "ניסיון רובלוקס",
      "emoji": null,
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "trial"
     },
     {
      "time": "15:20",
+     "end": null,
      "title": "ניסיון מיינקראפט",
      "emoji": null,
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "trial"
     }
@@ -174,6 +185,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -187,9 +199,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -201,6 +215,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -223,6 +238,35 @@
     "back": "2026-09-14"
    },
    "school": false,
+   "off": "vacation",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [
+    {
+     "time": "16:00",
+     "end": null,
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-09-12",
+   "dayName": "יום שבת",
+   "vacation": {
+    "name": "ראש השנה",
+    "from": "2026-09-11",
+    "to": "2026-09-13",
+    "back": "2026-09-14"
+   },
+   "school": false,
+   "off": "weekend",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -239,10 +283,22 @@
     "back": "2026-09-14"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
    "note": null
   },
   {
@@ -250,6 +306,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -263,9 +320,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "מפגש מחוננים",
      "emoji": null,
      "details": "היכרות הורים וילדים ביהל״ם",
+     "bring": null,
      "startsOn": null,
      "category": "gifted"
     }
@@ -277,6 +336,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -289,25 +349,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": "השבוע בלבד",
+     "bring": null,
      "startsOn": null,
      "category": "scouts"
     }
@@ -319,6 +385,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -332,17 +399,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": "השבוע בלבד",
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -354,6 +425,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -371,6 +443,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -382,9 +455,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -392,10 +467,23 @@
    "note": null
   },
   {
+   "date": "2026-09-19",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-09-20",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -409,17 +497,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -431,6 +523,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -454,10 +547,22 @@
     "back": null
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "17:00",
+     "end": null,
+     "title": "צופים בפארק שטרן",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
    "note": null
   },
   {
@@ -470,10 +575,22 @@
     "back": null
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
    "note": null
   },
   {
@@ -486,6 +603,7 @@
     "back": null
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -502,6 +620,35 @@
     "back": "2026-10-04"
    },
    "school": false,
+   "off": "vacation",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [
+    {
+     "time": "16:00",
+     "end": null,
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-09-26",
+   "dayName": "יום שבת",
+   "vacation": {
+    "name": "סוכות",
+    "from": "2026-09-25",
+    "to": "2026-10-03",
+    "back": "2026-10-04"
+   },
+   "school": false,
+   "off": "weekend",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -518,10 +665,32 @@
     "back": "2026-10-04"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "end": null,
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "bring": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
    "note": null
   },
   {
@@ -534,6 +703,7 @@
     "back": "2026-10-04"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -550,10 +720,22 @@
     "back": "2026-10-04"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "17:00",
+     "end": null,
+     "title": "צופים בפארק שטרן",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
    "note": null
   },
   {
@@ -566,10 +748,22 @@
     "back": "2026-10-04"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
    "note": null
   },
   {
@@ -582,6 +776,7 @@
     "back": "2026-10-04"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -598,6 +793,35 @@
     "back": "2026-10-04"
    },
    "school": false,
+   "off": "vacation",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [
+    {
+     "time": "16:00",
+     "end": null,
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-10-03",
+   "dayName": "יום שבת",
+   "vacation": {
+    "name": "סוכות",
+    "from": "2026-09-25",
+    "to": "2026-10-03",
+    "back": "2026-10-04"
+   },
+   "school": false,
+   "off": "weekend",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -609,6 +833,7 @@
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -622,17 +847,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -644,6 +873,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -662,6 +892,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -674,25 +905,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -704,6 +941,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -717,9 +955,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -731,6 +971,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -743,9 +984,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -757,6 +1000,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -768,9 +1012,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -778,10 +1024,23 @@
    "note": null
   },
   {
+   "date": "2026-10-10",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-10-11",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -795,17 +1054,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -817,6 +1080,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -835,6 +1099,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -847,25 +1112,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -877,6 +1148,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -890,9 +1162,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -904,6 +1178,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -916,9 +1191,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -930,6 +1207,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -941,9 +1219,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -951,10 +1231,23 @@
    "note": null
   },
   {
+   "date": "2026-10-17",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-10-18",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -968,17 +1261,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -990,6 +1287,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1008,6 +1306,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1020,25 +1319,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1050,6 +1355,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1063,9 +1369,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -1077,6 +1385,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -1089,9 +1398,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -1103,6 +1414,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1114,9 +1426,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1124,10 +1438,23 @@
    "note": null
   },
   {
+   "date": "2026-10-24",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-10-25",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1141,17 +1468,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -1163,6 +1494,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1181,6 +1513,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1193,25 +1526,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1223,6 +1562,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1236,9 +1576,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -1250,6 +1592,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -1262,9 +1605,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -1276,6 +1621,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1287,9 +1633,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1297,10 +1645,23 @@
    "note": null
   },
   {
+   "date": "2026-10-31",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-11-01",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1314,17 +1675,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -1336,6 +1701,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1354,6 +1720,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1366,25 +1733,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1396,6 +1769,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1409,9 +1783,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -1423,6 +1799,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -1435,9 +1812,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -1449,6 +1828,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1460,9 +1840,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1470,10 +1852,23 @@
    "note": null
   },
   {
+   "date": "2026-11-07",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-11-08",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1487,17 +1882,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -1509,6 +1908,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1527,6 +1927,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1539,25 +1940,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1569,6 +1976,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1582,9 +1990,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -1596,6 +2006,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -1608,9 +2019,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -1622,6 +2035,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1633,9 +2047,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1643,10 +2059,23 @@
    "note": null
   },
   {
+   "date": "2026-11-14",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-11-15",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1660,17 +2089,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -1682,6 +2115,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1700,6 +2134,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1712,25 +2147,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1742,6 +2183,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1755,9 +2197,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -1769,6 +2213,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -1781,9 +2226,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -1795,6 +2242,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1806,9 +2254,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1816,10 +2266,23 @@
    "note": null
   },
   {
+   "date": "2026-11-21",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-11-22",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1833,17 +2296,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -1855,6 +2322,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1873,6 +2341,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1885,25 +2354,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1915,6 +2390,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -1928,9 +2404,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -1942,6 +2420,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -1954,9 +2433,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -1968,6 +2449,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -1979,9 +2461,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -1989,10 +2473,23 @@
    "note": null
   },
   {
+   "date": "2026-11-28",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-11-29",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2006,17 +2503,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -2028,6 +2529,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2046,6 +2548,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -2058,25 +2561,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -2088,6 +2597,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2101,9 +2611,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -2115,6 +2627,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -2127,9 +2640,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -2141,6 +2656,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -2152,13 +2668,27 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
    ],
+   "note": null
+  },
+  {
+   "date": "2026-12-05",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
    "note": null
   },
   {
@@ -2171,10 +2701,32 @@
     "back": "2026-12-13"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "end": null,
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "bring": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
    "note": null
   },
   {
@@ -2187,6 +2739,7 @@
     "back": "2026-12-13"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -2203,10 +2756,22 @@
     "back": "2026-12-13"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "17:00",
+     "end": null,
+     "title": "צופים בפארק שטרן",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
    "note": null
   },
   {
@@ -2219,10 +2784,22 @@
     "back": "2026-12-13"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
    "note": null
   },
   {
@@ -2235,6 +2812,7 @@
     "back": "2026-12-13"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -2251,6 +2829,35 @@
     "back": "2026-12-13"
    },
    "school": false,
+   "off": "vacation",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [
+    {
+     "time": "16:00",
+     "end": null,
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2026-12-12",
+   "dayName": "יום שבת",
+   "vacation": {
+    "name": "חנוכה",
+    "from": "2026-12-06",
+    "to": "2026-12-12",
+    "back": "2026-12-13"
+   },
+   "school": false,
+   "off": "weekend",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -2262,6 +2869,7 @@
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2275,17 +2883,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -2297,6 +2909,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2315,6 +2928,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -2327,25 +2941,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -2357,6 +2977,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2370,9 +2991,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -2384,6 +3007,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -2396,9 +3020,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -2410,6 +3036,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -2421,9 +3048,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -2431,10 +3060,23 @@
    "note": null
   },
   {
+   "date": "2026-12-19",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-12-20",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2448,17 +3090,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -2470,6 +3116,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2488,6 +3135,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -2500,25 +3148,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -2530,6 +3184,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2543,9 +3198,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -2557,6 +3214,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -2569,9 +3227,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -2583,6 +3243,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -2594,9 +3255,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -2604,10 +3267,23 @@
    "note": null
   },
   {
+   "date": "2026-12-26",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2026-12-27",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2621,17 +3297,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -2643,6 +3323,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2661,6 +3342,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -2673,25 +3355,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -2703,6 +3391,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2716,9 +3405,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -2730,6 +3421,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -2742,9 +3434,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -2756,6 +3450,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -2767,9 +3462,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -2777,10 +3474,23 @@
    "note": null
   },
   {
+   "date": "2027-01-02",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-01-03",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2794,17 +3504,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -2816,6 +3530,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2834,6 +3549,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -2846,25 +3562,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -2876,6 +3598,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2889,9 +3612,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -2903,6 +3628,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -2915,9 +3641,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -2929,6 +3657,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -2940,9 +3669,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -2950,10 +3681,23 @@
    "note": null
   },
   {
+   "date": "2027-01-09",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-01-10",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -2967,17 +3711,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -2989,6 +3737,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3007,6 +3756,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3019,25 +3769,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3049,6 +3805,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3062,9 +3819,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -3076,6 +3835,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -3088,9 +3848,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -3102,6 +3864,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3113,9 +3876,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3123,10 +3888,23 @@
    "note": null
   },
   {
+   "date": "2027-01-16",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-01-17",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3140,17 +3918,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -3162,6 +3944,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3180,6 +3963,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3192,25 +3976,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3222,6 +4012,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3235,9 +4026,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -3249,6 +4042,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -3261,9 +4055,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -3275,6 +4071,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3286,9 +4083,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3296,10 +4095,23 @@
    "note": null
   },
   {
+   "date": "2027-01-23",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-01-24",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3313,17 +4125,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -3335,6 +4151,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3353,6 +4170,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3365,25 +4183,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3395,6 +4219,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3408,9 +4233,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -3422,6 +4249,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -3434,9 +4262,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -3448,6 +4278,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3459,9 +4290,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3469,10 +4302,23 @@
    "note": null
   },
   {
+   "date": "2027-01-30",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-01-31",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3486,17 +4332,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -3508,6 +4358,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3526,6 +4377,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3538,25 +4390,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3568,6 +4426,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3581,9 +4440,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -3595,6 +4456,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -3607,9 +4469,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -3621,6 +4485,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3632,9 +4497,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3642,10 +4509,23 @@
    "note": null
   },
   {
+   "date": "2027-02-06",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-02-07",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3659,17 +4539,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -3681,6 +4565,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3699,6 +4584,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3711,25 +4597,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3741,6 +4633,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3754,9 +4647,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -3768,6 +4663,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -3780,9 +4676,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -3794,6 +4692,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3805,9 +4704,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3815,10 +4716,23 @@
    "note": null
   },
   {
+   "date": "2027-02-13",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-02-14",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3832,17 +4746,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -3854,6 +4772,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3872,6 +4791,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3884,25 +4804,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3914,6 +4840,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -3927,9 +4854,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -3941,6 +4870,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -3953,9 +4883,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -3967,6 +4899,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -3978,9 +4911,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -3988,10 +4923,23 @@
    "note": null
   },
   {
+   "date": "2027-02-20",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-02-21",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4005,17 +4953,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -4027,6 +4979,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4045,6 +4998,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4057,25 +5011,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4087,6 +5047,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4100,9 +5061,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -4114,6 +5077,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -4126,9 +5090,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -4140,6 +5106,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4151,9 +5118,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4161,10 +5130,23 @@
    "note": null
   },
   {
+   "date": "2027-02-27",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-02-28",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4178,17 +5160,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -4200,6 +5186,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4218,6 +5205,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4230,25 +5218,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4260,6 +5254,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4273,9 +5268,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -4287,6 +5284,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -4299,9 +5297,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -4313,6 +5313,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4324,9 +5325,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4334,10 +5337,23 @@
    "note": null
   },
   {
+   "date": "2027-03-06",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-03-07",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4351,17 +5367,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -4373,6 +5393,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4391,6 +5412,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4403,25 +5425,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4433,6 +5461,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4446,9 +5475,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -4460,6 +5491,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -4472,9 +5504,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -4486,6 +5520,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4497,9 +5532,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4507,10 +5544,23 @@
    "note": null
   },
   {
+   "date": "2027-03-13",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-03-14",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4524,17 +5574,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -4546,6 +5600,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4564,6 +5619,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4576,25 +5632,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4606,6 +5668,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4619,9 +5682,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -4633,6 +5698,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -4645,9 +5711,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -4659,6 +5727,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4670,9 +5739,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4680,10 +5751,23 @@
    "note": null
   },
   {
+   "date": "2027-03-20",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-03-21",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4697,17 +5781,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -4719,6 +5807,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4742,10 +5831,22 @@
     "back": "2027-03-25"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "17:00",
+     "end": null,
+     "title": "צופים בפארק שטרן",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
    "note": null
   },
   {
@@ -4758,10 +5859,22 @@
     "back": "2027-03-25"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
    "note": null
   },
   {
@@ -4769,6 +5882,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -4781,9 +5895,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -4795,6 +5911,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4806,9 +5923,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4816,10 +5935,23 @@
    "note": null
   },
   {
+   "date": "2027-03-27",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-03-28",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4833,17 +5965,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -4855,6 +5991,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4873,6 +6010,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4885,25 +6023,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4915,6 +6059,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -4928,9 +6073,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -4942,6 +6089,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -4954,9 +6102,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -4968,6 +6118,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -4979,9 +6130,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -4989,10 +6142,23 @@
    "note": null
   },
   {
+   "date": "2027-04-03",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-04-04",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5006,17 +6172,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -5028,6 +6198,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5046,6 +6217,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -5058,25 +6230,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -5088,6 +6266,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5101,9 +6280,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -5115,6 +6296,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -5127,9 +6309,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -5141,6 +6325,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -5152,9 +6337,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -5162,10 +6349,23 @@
    "note": null
   },
   {
+   "date": "2027-04-10",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-04-11",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5179,17 +6379,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -5201,6 +6405,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5224,10 +6429,22 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "17:00",
+     "end": null,
+     "title": "צופים בפארק שטרן",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
    "note": null
   },
   {
@@ -5240,10 +6457,22 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
    "note": null
   },
   {
@@ -5256,6 +6485,7 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -5272,6 +6502,35 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [
+    {
+     "time": "16:00",
+     "end": null,
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-17",
+   "dayName": "יום שבת",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "off": "weekend",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -5288,10 +6547,32 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "end": null,
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "bring": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
    "note": null
   },
   {
@@ -5304,6 +6585,7 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -5320,10 +6602,22 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "17:00",
+     "end": null,
+     "title": "צופים בפארק שטרן",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
    "note": null
   },
   {
@@ -5336,10 +6630,22 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
    "note": null
   },
   {
@@ -5352,6 +6658,7 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -5368,6 +6675,35 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [
+    {
+     "time": "16:00",
+     "end": null,
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-04-24",
+   "dayName": "יום שבת",
+   "vacation": {
+    "name": "פסח",
+    "from": "2027-04-13",
+    "to": "2027-04-28",
+    "back": "2027-04-29"
+   },
+   "school": false,
+   "off": "weekend",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -5384,10 +6720,32 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    },
+    {
+     "time": "18:00",
+     "end": null,
+     "title": "מפגש עם עינת",
+     "emoji": null,
+     "details": null,
+     "bring": null,
+     "startsOn": null,
+     "category": "einat"
+    }
+   ],
    "note": null
   },
   {
@@ -5400,6 +6758,7 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -5416,10 +6775,22 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "17:00",
+     "end": null,
+     "title": "צופים בפארק שטרן",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
    "note": null
   },
   {
@@ -5432,10 +6803,22 @@
     "back": "2027-04-29"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
    "note": null
   },
   {
@@ -5443,6 +6826,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -5455,9 +6839,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -5469,6 +6855,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -5480,9 +6867,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -5490,10 +6879,23 @@
    "note": null
   },
   {
+   "date": "2027-05-01",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-05-02",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5507,17 +6909,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -5529,6 +6935,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5547,6 +6954,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -5559,25 +6967,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -5589,6 +7003,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5602,9 +7017,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -5616,6 +7033,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -5628,9 +7046,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -5642,6 +7062,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -5653,9 +7074,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -5663,10 +7086,23 @@
    "note": null
   },
   {
+   "date": "2027-05-08",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-05-09",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5680,17 +7116,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -5702,6 +7142,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5720,6 +7161,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -5732,25 +7174,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -5767,10 +7215,22 @@
     "back": "2027-05-13"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "15:00",
+     "end": null,
+     "title": "כדורסל",
+     "emoji": "🏀",
+     "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
+     "startsOn": null,
+     "category": "basketball"
+    }
+   ],
    "note": null
   },
   {
@@ -5778,6 +7238,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -5790,9 +7251,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -5804,6 +7267,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -5815,9 +7279,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -5825,10 +7291,23 @@
    "note": null
   },
   {
+   "date": "2027-05-15",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-05-16",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5842,17 +7321,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -5864,6 +7347,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5882,6 +7366,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -5894,25 +7379,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -5924,6 +7415,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -5937,9 +7429,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -5951,6 +7445,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -5963,9 +7458,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -5977,6 +7474,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -5988,9 +7486,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -5998,10 +7498,23 @@
    "note": null
   },
   {
+   "date": "2027-05-22",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-05-23",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6015,17 +7528,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -6037,6 +7554,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6055,6 +7573,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -6067,25 +7586,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -6097,6 +7622,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6110,9 +7636,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -6124,6 +7652,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -6136,9 +7665,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -6150,6 +7681,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -6161,9 +7693,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -6171,10 +7705,23 @@
    "note": null
   },
   {
+   "date": "2027-05-29",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-05-30",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6188,17 +7735,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -6210,6 +7761,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6228,6 +7780,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -6240,25 +7793,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -6270,6 +7829,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6283,9 +7843,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -6297,6 +7859,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -6309,9 +7872,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -6323,6 +7888,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -6334,9 +7900,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -6344,10 +7912,23 @@
    "note": null
   },
   {
+   "date": "2027-06-05",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-06-06",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6361,17 +7942,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -6383,6 +7968,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6401,6 +7987,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -6413,25 +8000,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -6443,6 +8036,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6456,9 +8050,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -6475,6 +8071,7 @@
     "back": "2027-06-13"
    },
    "school": false,
+   "off": "vacation",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -6491,6 +8088,30 @@
     "back": "2027-06-13"
    },
    "school": false,
+   "off": "vacation",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [
+    {
+     "time": "16:00",
+     "end": null,
+     "title": "צופים בשבט",
+     "emoji": "⚜⛺",
+     "details": null,
+     "bring": "חולצת צופים",
+     "startsOn": null,
+     "category": "scouts"
+    }
+   ],
+   "note": null
+  },
+  {
+   "date": "2027-06-12",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
    "endsAt": null,
    "uniform": null,
    "lessons": [],
@@ -6502,6 +8123,7 @@
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6515,17 +8137,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -6537,6 +8163,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6555,6 +8182,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -6567,25 +8195,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -6597,6 +8231,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6610,9 +8245,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -6624,6 +8261,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -6636,9 +8274,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -6650,6 +8290,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -6661,9 +8302,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -6671,10 +8314,23 @@
    "note": null
   },
   {
+   "date": "2027-06-19",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-06-20",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6688,17 +8344,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -6710,6 +8370,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6728,6 +8389,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -6740,25 +8402,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -6770,6 +8438,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6783,9 +8452,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -6797,6 +8468,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -6809,9 +8481,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -6823,6 +8497,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -6834,9 +8509,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -6844,10 +8521,23 @@
    "note": null
   },
   {
+   "date": "2027-06-26",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-06-27",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6861,17 +8551,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -6883,6 +8577,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6901,6 +8596,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -6913,25 +8609,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -6943,6 +8645,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -6956,9 +8659,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -6970,6 +8675,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -6982,9 +8688,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -6996,6 +8704,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -7007,9 +8716,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -7017,10 +8728,23 @@
    "note": null
   },
   {
+   "date": "2027-07-03",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-07-04",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7034,17 +8758,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -7056,6 +8784,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7074,6 +8803,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -7086,25 +8816,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -7116,6 +8852,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7129,9 +8866,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -7143,6 +8882,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -7155,9 +8895,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -7169,6 +8911,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -7180,9 +8923,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -7190,10 +8935,23 @@
    "note": null
   },
   {
+   "date": "2027-07-10",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-07-11",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7207,17 +8965,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -7229,6 +8991,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7247,6 +9010,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -7259,25 +9023,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -7289,6 +9059,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7302,9 +9073,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -7316,6 +9089,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -7328,9 +9102,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -7342,6 +9118,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -7353,9 +9130,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -7363,10 +9142,23 @@
    "note": null
   },
   {
+   "date": "2027-07-17",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-07-18",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7380,17 +9172,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -7402,6 +9198,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7420,6 +9217,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -7432,25 +9230,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -7462,6 +9266,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7475,9 +9280,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -7489,6 +9296,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -7501,9 +9309,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -7515,6 +9325,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -7526,9 +9337,11 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -7536,10 +9349,23 @@
    "note": null
   },
   {
+   "date": "2027-07-24",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
+   "note": null
+  },
+  {
    "date": "2027-07-25",
    "dayName": "יום ראשון",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7553,17 +9379,21 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     },
     {
      "time": "18:00",
+     "end": null,
      "title": "מפגש עם עינת",
      "emoji": null,
      "details": null,
+     "bring": null,
      "startsOn": null,
      "category": "einat"
     }
@@ -7575,6 +9405,7 @@
    "dayName": "יום שני",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7593,6 +9424,7 @@
    "dayName": "יום שלישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -7605,25 +9437,31 @@
    "activities": [
     {
      "time": "13:45",
+     "end": "15:15",
      "title": "חוג רובלוקס",
      "emoji": "🎮",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "roblox"
     },
     {
      "time": "15:20",
+     "end": "16:50",
      "title": "חוג מיינקראפט",
      "emoji": "⛏",
      "details": "כיתה ד1",
+     "bring": null,
      "startsOn": null,
      "category": "minecraft"
     },
     {
      "time": "17:00",
+     "end": null,
      "title": "צופים בפארק שטרן",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
@@ -7635,6 +9473,7 @@
    "dayName": "יום רביעי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "13:30",
    "uniform": null,
    "lessons": [
@@ -7648,9 +9487,11 @@
    "activities": [
     {
      "time": "15:00",
+     "end": null,
      "title": "כדורסל",
      "emoji": "🏀",
      "details": null,
+     "bring": "בגדי ספורט ונעלי כדורסל",
      "startsOn": null,
      "category": "basketball"
     }
@@ -7662,6 +9503,7 @@
    "dayName": "יום חמישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "12:45",
    "uniform": null,
    "lessons": [
@@ -7674,9 +9516,11 @@
    "activities": [
     {
      "time": "14:30",
+     "end": null,
      "title": "תכנית מצטיינים",
      "emoji": "🎓",
      "details": "ביה״ס יהל״ם",
+     "bring": null,
      "startsOn": "2026-10-08",
      "category": "yahalom"
     }
@@ -7688,6 +9532,7 @@
    "dayName": "יום שישי",
    "vacation": null,
    "school": true,
+   "off": null,
    "endsAt": "11:45",
    "uniform": "תלבושת ספורט",
    "lessons": [
@@ -7699,13 +9544,27 @@
    "activities": [
     {
      "time": "16:00",
+     "end": null,
      "title": "צופים בשבט",
      "emoji": "⚜⛺",
      "details": null,
+     "bring": "חולצת צופים",
      "startsOn": null,
      "category": "scouts"
     }
    ],
+   "note": null
+  },
+  {
+   "date": "2027-07-31",
+   "dayName": "יום שבת",
+   "vacation": null,
+   "school": false,
+   "off": "weekend",
+   "endsAt": null,
+   "uniform": null,
+   "lessons": [],
+   "activities": [],
    "note": null
   }
  ]

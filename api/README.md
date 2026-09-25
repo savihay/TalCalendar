@@ -18,12 +18,13 @@ push שנוגע ב-`index.html`. ה-CDN של GitHub Pages מחזיר `Access-Con
     {
       "date": "2026-09-15", "dayName": "יום שלישי",
       "school": true, "vacation": null,
+      "off": null,                           // null | "weekend" (שבת) | "vacation"
       "endsAt": "12:45",                    // שעת סיום הלימודים
       "uniform": "תלבושת ספורט",             // null אם אין
       "lessons": ["מורשת", "מתמטיקה", …],    // לפי סדר השיעורים
       "activities": [                        // חוגים ומפגשים אחרי הלימודים
-        { "time": "13:45", "title": "חוג רובלוקס", "emoji": "🎮",
-          "details": "כיתה ד1", "startsOn": null, "category": "roblox" }
+        { "time": "13:45", "end": "15:15", "title": "חוג רובלוקס", "emoji": "🎮",
+          "details": "כיתה ד1", "bring": null, "startsOn": null, "category": "roblox" }
       ],
       "note": null                           // תזכורת חד-פעמית ליום הזה
     }
@@ -31,8 +32,13 @@ push שנוגע ב-`index.html`. ה-CDN של GitHub Pages מחזיר `Access-Con
 }
 ```
 
-`days` מכיל את כל ימי הלימודים (ראשון–שישי) עד סוף שנת הלימודים, ממוין לפי תאריך.
-ימי חופש מופיעים עם `school: false` ו-`vacation` מלא.
+`days` מכיל את כל ימות השבוע, ראשון עד שבת, עד סוף שנת הלימודים, ממוין לפי תאריך.
+
+- `school: false` בשבת ובחופשות. `off` מסביר למה: `"weekend"` או `"vacation"`.
+- **ביום חופש עדיין יש חוגים** – כדורסל, צופים ומפגש עם עינת ממשיכים; חוגי המחשב
+  ותכניות בית הספר נעצרים. מה שמופיע ב-`activities` באמת מתקיים באותו יום.
+- `end` הוא שעת סיום החוג, `bring` הוא מה שצריך לקחת. שניהם `null` כשלא ידוע –
+  במקרה כזה אל תמציא, תגיד שאתה לא יודע.
 
 ## שימוש עם Gemini Live
 
