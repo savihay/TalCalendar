@@ -624,18 +624,7 @@
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [
-    {
-     "time": "16:00",
-     "end": null,
-     "title": "צופים בשבט",
-     "emoji": "⚜⛺",
-     "details": null,
-     "bring": "חולצת צופים",
-     "startsOn": null,
-     "category": "scouts"
-    }
-   ],
+   "activities": [],
    "note": null
   },
   {
