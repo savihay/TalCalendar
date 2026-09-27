@@ -670,6 +670,16 @@
      "category": "basketball"
     },
     {
+     "time": "16:45",
+     "end": "17:30",
+     "title": "שיעור מיינקראפט",
+     "emoji": "⛏",
+     "details": "דובדבן 9, קריית אונו",
+     "bring": null,
+     "startsOn": null,
+     "category": "minecraft"
+    },
+    {
      "time": "18:00",
      "end": null,
      "title": "מפגש עם עינת",
@@ -696,7 +706,18 @@
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [],
+   "activities": [
+    {
+     "time": "17:15",
+     "end": "18:00",
+     "title": "שיעור רובלוקס",
+     "emoji": "🎮",
+     "details": "דובדבן 9, קריית אונו",
+     "bring": null,
+     "startsOn": null,
+     "category": "roblox"
+    }
+   ],
    "note": null
   },
   {
