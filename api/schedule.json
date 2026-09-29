@@ -734,18 +734,7 @@
    "endsAt": null,
    "uniform": null,
    "lessons": [],
-   "activities": [
-    {
-     "time": "17:00",
-     "end": null,
-     "title": "צופים בפארק שטרן",
-     "emoji": "⚜⛺",
-     "details": null,
-     "bring": "חולצת צופים",
-     "startsOn": null,
-     "category": "scouts"
-    }
-   ],
+   "activities": [],
    "note": null
   },
   {
